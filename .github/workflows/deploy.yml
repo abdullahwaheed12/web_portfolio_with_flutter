@@ -4,12 +4,18 @@ on:
   push:
     branches: [ main ]
 
+# Add permissions block
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Required for proper git history
       
       - uses: subosito/flutter-action@v2
         with:
@@ -26,4 +32,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/web 
+          publish_dir: ./build/web
+          commit_message: "Deploy to GitHub Pages"
+          force_orphan: true  # This ensures a clean deployment 
