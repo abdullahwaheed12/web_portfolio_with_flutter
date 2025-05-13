@@ -26,7 +26,7 @@ jobs:
         run: flutter pub get
         
       - name: Build
-        run: flutter build web --release
+        run: flutter build web --release --base-href "/web_portfolio_with_flutter/"
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
