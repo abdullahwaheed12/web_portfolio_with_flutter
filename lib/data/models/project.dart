@@ -1,21 +1,31 @@
 class Project {
-  final String name;
-  final String imageUrl;
+  final String id;
+  final String title;
   final String description;
-  final String? githubRepoLink;
-  final String? previewLink;
-  final String? googlePlay;
-  final String? appStore;
-  final String? website;
+  final String imageUrl;
+  final String? webUrl;
+  final String? githubUrl;
+  final List<String> technologies;
+  final List<String> features;
+  final String? appStoreUrl;
+  final String? playStoreUrl;
 
   const Project({
-    required this.name,
-    required this.imageUrl,
+    required this.id,
+    required this.title,
     required this.description,
-    this.website,
-    this.appStore,
-    this.githubRepoLink,
-    this.previewLink,
-    this.googlePlay,
+    required this.imageUrl,
+    this.webUrl,
+    this.githubUrl,
+    required this.technologies,
+    required this.features,
+    this.appStoreUrl,
+    this.playStoreUrl,
   });
+
+  // For backward compatibility with existing code
+  String get name => title;
+  String? get previewLink => webUrl;
+  String? get githubRepoLink => githubUrl;
+  String? get googlePlay => playStoreUrl;
 }

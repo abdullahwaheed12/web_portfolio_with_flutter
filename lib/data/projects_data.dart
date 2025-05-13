@@ -1,0 +1,76 @@
+import 'models/project.dart';
+
+class ProjectsData {
+  static const List<Project> projects = [
+    Project(
+      id: 'crewdog-tv',
+      title: 'CrewDog TV',
+      description: 'A video job board platform for AI projects, connecting freelancers with hiring organizations through engaging short-form videos.',
+      imageUrl: 'https://play-lh.googleusercontent.com/AtiKTgPximRRdIa8E5erlueG-OomX_C6IGimmvIQCGYjUbcjYDH16KH3ayBK6J6dBQ=w5120-h2880-rw',
+      webUrl: 'https://crewdog.co.uk/',
+      githubUrl: 'https://github.com/radyhaggag/live_score',
+      technologies: ['Flutter', 'Firebase', 'Node.js', 'MongoDB', 'AWS'],
+      features: [
+        'AI project ads with short-form videos',
+        'Video-based job applications',
+        'Semantic search for project matching',
+        'Social media integration',
+        'Real-time notifications',
+      ],
+      playStoreUrl: 'https://play.google.com/store/apps/details/CrewDog_TV?id=com.app.crewdog&hl=en_US',
+      appStoreUrl: 'https://apps.apple.com/in/app/crewdog-tv/id6463269076',
+    ),
+    Project(
+      id: 'promoter-app',
+      title: 'Promoter App',
+      description: 'An event management platform that connects event promoters with attendees, offering features like geolocation-based search, secure ticketing, and social media integration.',
+      imageUrl: 'https://play-lh.googleusercontent.com/Dr0I4FwHLpRUnwRXloh0gR3dRSrR8x75w1DD95Gox_TWFEaTFBdJLXKpMpjUC9UI4w=w5120-h2880-rw',
+      webUrl: 'https://www.thepromoterapp.com/',
+      githubUrl: 'https://github.com/radyhaggag/Instagram-Clone-With-Clean-Architecture',
+      technologies: ['Flutter', 'Firebase', 'Google Maps API', 'PayPal SDK'],
+      features: [
+        'Event creation and management',
+        'Geolocation-based event discovery',
+        'Secure ticketing system',
+        'Social media integration',
+        'Personalized recommendations',
+      ],
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.promoter.promoter&hl=en',
+      appStoreUrl: 'https://apps.apple.com/us/app/the-promoter-app/id6450935060',
+    ),
+    Project(
+      id: 'growx-ai',
+      title: 'GrowX A.i',
+      description: 'A comprehensive growing guide app that supports users through all phases of plant growth, from germination to harvest, with optimized growing techniques.',
+      imageUrl: 'https://play-lh.googleusercontent.com/oyGKtEphVvfziCH0NLF5uT5WmqQFi5lz32u5VRLL84_AnU7ugwWNJifSAq3S4UFFPw=w5120-h2880-rw',
+      webUrl: 'https://growxai.io/',
+      technologies: ['Flutter', 'Firebase', 'TensorFlow', 'Google Cloud'],
+      features: [
+        'Week-by-week growing guide',
+        'Growth phase tracking',
+        'AI-powered growing tips',
+        'Community support',
+        'Resource optimization',
+      ],
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.growxai.io&pli=1',
+      appStoreUrl: 'https://apps.apple.com/pk/app/growx-ai/id6477212568',
+    ),
+    Project(
+      id: 'home-grown-pros',
+      title: 'Home Grown Pros',
+      description: 'Your ultimate gardening companion offering a wide selection of grow kits, seeds, tools, and accessories with expert tips and secure shopping.',
+      imageUrl: 'https://play-lh.googleusercontent.com/-xBR8EARZK45eYM7Tiu6gtRKnWOIJocyZ4nH26tVANtaqmJLiPv5Mox8puzsNp3Z_h8=w5120-h2880-rw',
+      webUrl: 'https://homegrownpros.io/',
+      technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
+      features: [
+        'Extensive product catalog',
+        'Expert gardening tips',
+        'Secure shopping experience',
+        'Customer reviews system',
+        'Special offers and discounts',
+      ],
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.growx.homegrownpro',
+      appStoreUrl: 'https://apps.apple.com/us/app/home-grown-pros/id6505116002',
+    ),
+  ];
+} 
