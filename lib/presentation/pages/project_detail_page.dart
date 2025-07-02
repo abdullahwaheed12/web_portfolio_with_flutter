@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:universal_html/html.dart' as html;
+import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/app_styles.dart';
@@ -34,6 +35,11 @@ class ProjectDetailPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _buildHeader(),
+            if (project.screenshots != null && project.screenshots!.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: _buildScreenshotSlider(),
+              ),
             Padding(
               padding: const EdgeInsets.all(24),
               child: Column(
@@ -269,6 +275,35 @@ class ProjectDetailPage extends StatelessWidget {
           ],
         ),
       ],
+    );
+  }
+
+  Widget _buildScreenshotSlider() {
+    return CarouselSlider(
+      options: CarouselOptions(
+        height: 300,
+        enlargeCenterPage: true,
+        enableInfiniteScroll: false,
+        autoPlay: true,
+      ),
+      items: project.screenshots!.map((url) {
+        return Builder(
+          builder: (BuildContext context) {
+            return ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: Image.network(
+                url,
+                fit: BoxFit.cover,
+                width: MediaQuery.of(context).size.width * 0.8,
+                errorBuilder: (context, error, stackTrace) => Container(
+                  color: Colors.grey[200],
+                  child: const Icon(Icons.broken_image, size: 60, color: Colors.grey),
+                ),
+              ),
+            );
+          },
+        );
+      }).toList(),
     );
   }
 } 

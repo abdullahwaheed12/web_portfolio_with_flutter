@@ -9,6 +9,7 @@ class Project {
   final List<String> features;
   final String? appStoreUrl;
   final String? playStoreUrl;
+  final List<String>? screenshots;
 
   const Project({
     required this.id,
@@ -21,6 +22,7 @@ class Project {
     required this.features,
     this.appStoreUrl,
     this.playStoreUrl,
+    this.screenshots,
   });
 
   // For backward compatibility with existing code
