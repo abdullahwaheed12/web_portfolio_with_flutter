@@ -5,6 +5,7 @@ import 'package:universal_html/html.dart' as html;
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/app_styles.dart';
 import '../../data/models/project.dart';
+import 'package:flutter/services.dart';
 
 class ProjectDetailPage extends StatelessWidget {
   final Project project;
@@ -283,29 +284,132 @@ class ProjectDetailPage extends StatelessWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
-          children: project.screenshots!.map((url) {
+          children: project.screenshots!.asMap().entries.map((entry) {
+            final idx = entry.key;
+            final url = entry.value;
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: GestureDetector(
                 onTap: () {
                   showDialog(
                     context: context,
-                    builder: (context) => Dialog(
-                      backgroundColor: Colors.transparent,
-                      child: InteractiveViewer(
-                        child: Container(
-                          color: Colors.black,
-                          child: Image.network(
-                            url,
-                            fit: BoxFit.contain,
-                            errorBuilder: (context, error, stackTrace) => Container(
-                              color: Colors.grey[200],
-                              child: const Icon(Icons.broken_image, size: 60, color: Colors.grey),
+                    builder: (context) {
+                      int currentIndex = idx;
+                      final focusNode = FocusNode();
+                      return StatefulBuilder(
+                        builder: (context, setState) {
+                          return Dialog(
+                            backgroundColor: Colors.transparent,
+                            child: Focus(
+                              autofocus: true,
+                              focusNode: focusNode,
+                              onKey: (node, event) {
+                                if (event is RawKeyDownEvent) {
+                                  if (event.logicalKey == LogicalKeyboardKey.arrowLeft && currentIndex > 0) {
+                                    setState(() {
+                                      currentIndex--;
+                                    });
+                                    return KeyEventResult.handled;
+                                  } else if (event.logicalKey == LogicalKeyboardKey.arrowRight && currentIndex < project.screenshots!.length - 1) {
+                                    setState(() {
+                                      currentIndex++;
+                                    });
+                                    return KeyEventResult.handled;
+                                  }
+                                }
+                                return KeyEventResult.ignored;
+                              },
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Container(
+                                    color: Colors.black,
+                                    child: InteractiveViewer(
+                                      child: Image.network(
+                                        project.screenshots![currentIndex],
+                                        fit: BoxFit.contain,
+                                        errorBuilder: (context, error, stackTrace) => Container(
+                                          color: Colors.grey[200],
+                                          child: const Icon(Icons.broken_image, size: 60, color: Colors.grey),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  // Left arrow
+                                  if (currentIndex > 0)
+                                    Positioned(
+                                      left: 16,
+                                      child: Material(
+                                        color: Colors.transparent,
+                                        child: InkWell(
+                                          borderRadius: BorderRadius.circular(32),
+                                          onTap: () {
+                                            setState(() {
+                                              currentIndex--;
+                                            });
+                                          },
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black.withOpacity(0.5),
+                                              shape: BoxShape.circle,
+                                            ),
+                                            padding: const EdgeInsets.all(8),
+                                            child: const Icon(Icons.arrow_left, size: 48, color: Colors.white),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  // Right arrow
+                                  if (currentIndex < project.screenshots!.length - 1)
+                                    Positioned(
+                                      right: 16,
+                                      child: Material(
+                                        color: Colors.transparent,
+                                        child: InkWell(
+                                          borderRadius: BorderRadius.circular(32),
+                                          onTap: () {
+                                            setState(() {
+                                              currentIndex++;
+                                            });
+                                          },
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black.withOpacity(0.5),
+                                              shape: BoxShape.circle,
+                                            ),
+                                            padding: const EdgeInsets.all(8),
+                                            child: const Icon(Icons.arrow_right, size: 48, color: Colors.white),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  // Close button
+                                  Positioned(
+                                    top: 16,
+                                    right: 16,
+                                    child: Material(
+                                      color: Colors.transparent,
+                                      child: InkWell(
+                                        borderRadius: BorderRadius.circular(32),
+                                        onTap: () => Navigator.of(context).pop(),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.black.withOpacity(0.5),
+                                            shape: BoxShape.circle,
+                                          ),
+                                          padding: const EdgeInsets.all(8),
+                                          child: const Icon(Icons.close, color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        ),
-                      ),
-                    ),
+                          );
+                        },
+                      );
+                    },
                   );
                 },
                 child: ClipRRect(
