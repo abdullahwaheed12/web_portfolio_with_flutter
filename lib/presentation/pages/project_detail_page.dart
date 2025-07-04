@@ -280,7 +280,7 @@ class ProjectDetailPage extends StatelessWidget {
 
   Widget _buildScreenshotRow(BuildContext context) {
     return SizedBox(
-      height: 200,
+      height: 300,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -305,12 +305,17 @@ class ProjectDetailPage extends StatelessWidget {
                               focusNode: focusNode,
                               onKey: (node, event) {
                                 if (event is RawKeyDownEvent) {
-                                  if (event.logicalKey == LogicalKeyboardKey.arrowLeft && currentIndex > 0) {
+                                  if (event.logicalKey ==
+                                          LogicalKeyboardKey.arrowLeft &&
+                                      currentIndex > 0) {
                                     setState(() {
                                       currentIndex--;
                                     });
                                     return KeyEventResult.handled;
-                                  } else if (event.logicalKey == LogicalKeyboardKey.arrowRight && currentIndex < project.screenshots!.length - 1) {
+                                  } else if (event.logicalKey ==
+                                          LogicalKeyboardKey.arrowRight &&
+                                      currentIndex <
+                                          project.screenshots!.length - 1) {
                                     setState(() {
                                       currentIndex++;
                                     });
@@ -328,9 +333,33 @@ class ProjectDetailPage extends StatelessWidget {
                                       child: Image.network(
                                         project.screenshots![currentIndex],
                                         fit: BoxFit.contain,
-                                        errorBuilder: (context, error, stackTrace) => Container(
+                                        loadingBuilder:
+                                            (context, child, loadingProgress) {
+                                          if (loadingProgress == null) {
+                                            return child;
+                                          }
+                                          return Container(
+                                            height: 400,
+                                            color:
+                                                Colors.black.withOpacity(0.1),
+                                            child: const Center(
+                                              child: SizedBox(
+                                                height: 60,
+                                                width: 60,
+                                                child:
+                                                    CircularProgressIndicator(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          );
+                                        },
+                                        errorBuilder:
+                                            (context, error, stackTrace) =>
+                                                Container(
                                           color: Colors.grey[200],
-                                          child: const Icon(Icons.broken_image, size: 60, color: Colors.grey),
+                                          child: const Icon(Icons.broken_image,
+                                              size: 60, color: Colors.grey),
                                         ),
                                       ),
                                     ),
@@ -342,7 +371,8 @@ class ProjectDetailPage extends StatelessWidget {
                                       child: Material(
                                         color: Colors.transparent,
                                         child: InkWell(
-                                          borderRadius: BorderRadius.circular(32),
+                                          borderRadius:
+                                              BorderRadius.circular(32),
                                           onTap: () {
                                             setState(() {
                                               currentIndex--;
@@ -350,23 +380,27 @@ class ProjectDetailPage extends StatelessWidget {
                                           },
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              color: Colors.black.withOpacity(0.5),
+                                              color:
+                                                  Colors.black.withOpacity(0.5),
                                               shape: BoxShape.circle,
                                             ),
                                             padding: const EdgeInsets.all(8),
-                                            child: const Icon(Icons.arrow_left, size: 48, color: Colors.white),
+                                            child: const Icon(Icons.arrow_left,
+                                                size: 48, color: Colors.white),
                                           ),
                                         ),
                                       ),
                                     ),
                                   // Right arrow
-                                  if (currentIndex < project.screenshots!.length - 1)
+                                  if (currentIndex <
+                                      project.screenshots!.length - 1)
                                     Positioned(
                                       right: 16,
                                       child: Material(
                                         color: Colors.transparent,
                                         child: InkWell(
-                                          borderRadius: BorderRadius.circular(32),
+                                          borderRadius:
+                                              BorderRadius.circular(32),
                                           onTap: () {
                                             setState(() {
                                               currentIndex++;
@@ -374,11 +408,13 @@ class ProjectDetailPage extends StatelessWidget {
                                           },
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              color: Colors.black.withOpacity(0.5),
+                                              color:
+                                                  Colors.black.withOpacity(0.5),
                                               shape: BoxShape.circle,
                                             ),
                                             padding: const EdgeInsets.all(8),
-                                            child: const Icon(Icons.arrow_right, size: 48, color: Colors.white),
+                                            child: const Icon(Icons.arrow_right,
+                                                size: 48, color: Colors.white),
                                           ),
                                         ),
                                       ),
@@ -391,14 +427,17 @@ class ProjectDetailPage extends StatelessWidget {
                                       color: Colors.transparent,
                                       child: InkWell(
                                         borderRadius: BorderRadius.circular(32),
-                                        onTap: () => Navigator.of(context).pop(),
+                                        onTap: () =>
+                                            Navigator.of(context).pop(),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            color: Colors.black.withOpacity(0.5),
+                                            color:
+                                                Colors.black.withOpacity(0.5),
                                             shape: BoxShape.circle,
                                           ),
                                           padding: const EdgeInsets.all(8),
-                                          child: const Icon(Icons.close, color: Colors.white),
+                                          child: const Icon(Icons.close,
+                                              color: Colors.white),
                                         ),
                                       ),
                                     ),
@@ -417,6 +456,21 @@ class ProjectDetailPage extends StatelessWidget {
                   child: Image.network(
                     url,
                     fit: BoxFit.contain,
+                    loadingBuilder: (context, child, loadingProgress) {
+                      if (loadingProgress == null) return child;
+                      return Container(
+                        height: 180,
+                        width: 320,
+                        color: Colors.black.withOpacity(0.1),
+                        child: const Center(
+                          child: SizedBox(
+                            height: 40,
+                            width: 40,
+                            child: CircularProgressIndicator(),
+                          ),
+                        ),
+                      );
+                    },
                     errorBuilder: (context, error, stackTrace) => Container(
                       color: Colors.grey[200],
                       child: const Icon(Icons.broken_image,
