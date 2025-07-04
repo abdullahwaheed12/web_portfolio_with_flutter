@@ -5,95 +5,129 @@ abstract class AppConstants {
 
   static const List<Project> projects = [
     Project(
-      id: 'crewdog-tv',
-      title: 'CrewDog TV',
-      description:
-          'A video job board platform for AI projects, connecting freelancers with hiring organizations through engaging short-form videos.',
-      imageUrl:
+        id: 'crewdog-tv',
+        title: 'CrewDog TV',
+        description:
+            'A video job board platform for AI projects, connecting freelancers with hiring organizations through engaging short-form videos.',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/AtiKTgPximRRdIa8E5erlueG-OomX_C6IGimmvIQCGYjUbcjYDH16KH3ayBK6J6dBQ=w5120-h2880-rw',
+        webUrl: 'https://crewdog.co.uk/',
+        githubUrl: '',
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Node.js',
+          'MongoDB',
+          'AWS',
+          'Push Notifications'
+        ],
+        features: [
+          'AI project ads with short-form videos',
+          'Video-based job applications',
+          'Semantic search for project matching',
+          'Social media integration',
+          'Real-time notifications',
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details/CrewDog_TV?id=com.app.crewdog&hl=en_US',
+        appStoreUrl: 'https://apps.apple.com/in/app/crewdog-tv/id6463269076',
+        screenshots: [
+          'https://play-lh.googleusercontent.com/01f0KDs4WzbHgb5tMY48ahZx1TmWK9LKYOESCIaTxrjtHgJlO083iFlLzAj8l4hRNA=w5120-h2880-rw',
           'https://play-lh.googleusercontent.com/AtiKTgPximRRdIa8E5erlueG-OomX_C6IGimmvIQCGYjUbcjYDH16KH3ayBK6J6dBQ=w5120-h2880-rw',
-      webUrl: 'https://crewdog.co.uk/',
-      githubUrl: '',
-      technologies: [
-        'Flutter',
-        'Firebase',
-        'Node.js',
-        'MongoDB',
-        'AWS',
-        'Push Notifications'
-      ],
-      features: [
-        'AI project ads with short-form videos',
-        'Video-based job applications',
-        'Semantic search for project matching',
-        'Social media integration',
-        'Real-time notifications',
-      ],
-      playStoreUrl:
-          'https://play.google.com/store/apps/details/CrewDog_TV?id=com.app.crewdog&hl=en_US',
-      appStoreUrl: 'https://apps.apple.com/in/app/crewdog-tv/id6463269076',
-    ),
+          'https://play-lh.googleusercontent.com/CMCzJtnnsepmiqM2A1cznwXycRJzhHihNusxXya4TMnD1P5FmbKTweEXw-YEIb-aFg=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/A6hZm53KSTnmmFv_3_gsizlG-M3Xdyefq-ZtxIOC-x_j2gFCeEMA2KeSn-P_uQxkMw=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/WUkUdwayNXowLAVx7NDyvFUQVpu3zH6iYcZvtlxixWZkpc5JhniaSElIaXeRpXwo5Py1=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/Wi3O1dm8r6cayh1f9ayuIo0A0RpWpEQAuTWEKYYE2tO7gn-fCowsIyMCvjZivkdM_WY=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/ryJ1XdRNaH5TYjWViR_IVp1ImVw17IwZf7-qC_Hu-1wF9cxV9KGeRahDk3GOc8DRkQ=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/ZhOgSJcBkYB9-64JhBEeIgZ6HBJlosOiNfv7Epxx9OXYcSdQSd5N5btcoW0PxLUrc84=w5120-h2880-rw',
+        ]),
     Project(
-      id: 'promoter-app',
-      title: 'Promoter App',
-      description:
-          'An event management platform that connects event promoters with attendees, offering features like geolocation-based search, secure ticketing, and social media integration.',
-      imageUrl:
+        id: 'promoter-app',
+        title: 'Promoter App',
+        description:
+            'An event management platform that connects event promoters with attendees, offering features like geolocation-based search, secure ticketing, and social media integration.',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/Dr0I4FwHLpRUnwRXloh0gR3dRSrR8x75w1DD95Gox_TWFEaTFBdJLXKpMpjUC9UI4w=w5120-h2880-rw',
+        webUrl: 'https://www.thepromoterapp.com/',
+        githubUrl: '',
+        technologies: ['Flutter', 'Firebase', 'Google Maps API', 'PayPal SDK'],
+        features: [
+          'Event creation and management',
+          'Geolocation-based event discovery',
+          'Secure ticketing system',
+          'Social media integration',
+          'Personalized recommendations',
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.promoter.promoter&hl=en',
+        appStoreUrl:
+            'https://apps.apple.com/us/app/the-promoter-app/id6450935060',
+        screenshots: [
           'https://play-lh.googleusercontent.com/Dr0I4FwHLpRUnwRXloh0gR3dRSrR8x75w1DD95Gox_TWFEaTFBdJLXKpMpjUC9UI4w=w5120-h2880-rw',
-      webUrl: 'https://www.thepromoterapp.com/',
-      githubUrl: '',
-      technologies: ['Flutter', 'Firebase', 'Google Maps API', 'PayPal SDK'],
-      features: [
-        'Event creation and management',
-        'Geolocation-based event discovery',
-        'Secure ticketing system',
-        'Social media integration',
-        'Personalized recommendations',
-      ],
-      playStoreUrl:
-          'https://play.google.com/store/apps/details?id=com.promoter.promoter&hl=en',
-      appStoreUrl:
-          'https://apps.apple.com/us/app/the-promoter-app/id6450935060',
-    ),
+          'https://play-lh.googleusercontent.com/YvjBhoG6SBb7BTpIvQ2WO15LvwDfPSU15OljvF8UGedN47svcKG2OB2iJGaj2Fv1RNw=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/A8b9z9EEjCSeb06yy6bEJY60B9ZslBYxfyQInYQl-6x-2B3150ThdX30RuLkne8Zeg=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/n_NNTYj37uLO-p1PJANFBt6bgMxggaNl21vKKH1xEPIrm9QHviOA4XHlAT0ay6O9m_1x=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/tjgtr_XTXWhY6_IOpeT5PzA9-V9tqqaDP7olss3ERQI5RK7rObDanRbboa5ataHjDjlC=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/kGRUyPeA3VAZ79fizCNzAbjf9BZPGjDp3oD9uycsI-l_xAgsyilpplyxFUHLuv4ZrY0=w5120-h2880-rw',
+        ]),
     Project(
-      id: 'growx-ai',
-      title: 'GrowX A.i',
-      description:
-          'A comprehensive growing guide app that supports users through all phases of plant growth, from germination to harvest, with optimized growing techniques.',
-      imageUrl:
+        id: 'growx-ai',
+        title: 'GrowX A.i',
+        description:
+            'A comprehensive growing guide app that supports users through all phases of plant growth, from germination to harvest, with optimized growing techniques.',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/oyGKtEphVvfziCH0NLF5uT5WmqQFi5lz32u5VRLL84_AnU7ugwWNJifSAq3S4UFFPw=w5120-h2880-rw',
+        webUrl: 'https://growxai.io/',
+        technologies: ['Flutter', 'Firebase', 'TensorFlow', 'Google Cloud'],
+        features: [
+          'Week-by-week growing guide',
+          'Growth phase tracking',
+          'AI-powered growing tips',
+          'Community support',
+          'Resource optimization',
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.growxai.io&pli=1',
+        appStoreUrl: 'https://apps.apple.com/pk/app/growx-ai/id6477212568',
+        screenshots: [
           'https://play-lh.googleusercontent.com/oyGKtEphVvfziCH0NLF5uT5WmqQFi5lz32u5VRLL84_AnU7ugwWNJifSAq3S4UFFPw=w5120-h2880-rw',
-      webUrl: 'https://growxai.io/',
-      technologies: ['Flutter', 'Firebase', 'TensorFlow', 'Google Cloud'],
-      features: [
-        'Week-by-week growing guide',
-        'Growth phase tracking',
-        'AI-powered growing tips',
-        'Community support',
-        'Resource optimization',
-      ],
-      playStoreUrl:
-          'https://play.google.com/store/apps/details?id=com.growxai.io&pli=1',
-      appStoreUrl: 'https://apps.apple.com/pk/app/growx-ai/id6477212568',
-    ),
+          'https://play-lh.googleusercontent.com/6XT1mL7O2z7-LXOoE0VqsGza7AnpZMqmsAF3CfkorvvN12KK6H_Fqa2sJfMSoXBM9ZH8=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/AjQkStUBaSE3W0DmRfN-MMhyLvcjlTmgaIS294KYUOoFrYqVQpyYVDpB1JKVlA7WbMCs=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/dpZ2dJrAIxiPYpO2xultvjhdwuhdnC_79-0-rla1h2s5F14OQrSpExF4OwII75GzX48=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/Ix0qtOsvwcfsvmDWtX3cGgKVnFWK8yJ7L0msUEg90-iVm4osKSX69Dp4UmQG0ewNxg=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/uZ0ocnZqLD7bPoufSyVVU3h5gv_IGqAd682FDb7RokSZ6nRdL7N7DdTkyKT5a9PMv-E=w5120-h2880-rw',
+        ]),
     Project(
-      id: 'home-grown-pros',
-      title: 'Home Grown Pros',
-      description:
-          'Your ultimate gardening companion offering a wide selection of grow kits, seeds, tools, and accessories with expert tips and secure shopping.',
-      imageUrl:
+        id: 'home-grown-pros',
+        title: 'Home Grown Pros',
+        description:
+            'Your ultimate gardening companion offering a wide selection of grow kits, seeds, tools, and accessories with expert tips and secure shopping.',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/-xBR8EARZK45eYM7Tiu6gtRKnWOIJocyZ4nH26tVANtaqmJLiPv5Mox8puzsNp3Z_h8=w5120-h2880-rw',
+        webUrl: 'https://homegrownpros.io/',
+        technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
+        features: [
+          'Extensive product catalog',
+          'Expert gardening tips',
+          'Secure shopping experience',
+          'Customer reviews system',
+          'Special offers and discounts',
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.growx.homegrownpro',
+        appStoreUrl:
+            'https://apps.apple.com/us/app/home-grown-pros/id6505116002',
+        screenshots: [
+          'https://play-lh.googleusercontent.com/me4iK_1WaDlKCbLEBjBB61704ASziNla64PP9-52L2_O6DgAUheKhNg9py--HdxAKQ=w5120-h2880-rw',
           'https://play-lh.googleusercontent.com/-xBR8EARZK45eYM7Tiu6gtRKnWOIJocyZ4nH26tVANtaqmJLiPv5Mox8puzsNp3Z_h8=w5120-h2880-rw',
-      webUrl: 'https://homegrownpros.io/',
-      technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
-      features: [
-        'Extensive product catalog',
-        'Expert gardening tips',
-        'Secure shopping experience',
-        'Customer reviews system',
-        'Special offers and discounts',
-      ],
-      playStoreUrl:
-          'https://play.google.com/store/apps/details?id=com.growx.homegrownpro',
-      appStoreUrl: 'https://apps.apple.com/us/app/home-grown-pros/id6505116002',
-    ),
+          'https://play-lh.googleusercontent.com/eYEJQvcbvp9QmMOa24GGgRDIbkFFIVxia3Rl2s_q8ddz0SSHIfmPrt2gGmjjX35lRzY=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/7zkmq6i65KwMbqidsC7xJd5fQWVz1tHkN6xDzJS62clnuSLkXOP7uRAIen--Jv-bxNc=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/2e67z-nE-oI1PXEAyb53meVF9H2WcmV3eocSe5x8I_-EnTDU0KsOZR1srBEZB5PZ6sYH=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/wHrdFzDwEf_jsybFCkL3x9x0nDNCuqUKGiE6DmOJrkDYbpoqWCGHOBYwCbiOsMs3Hcbf=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/X0bwwohL-xw_Qchlax9OuiwpfXjzaBcaSMnllGTL5hyq_8LONKpQSqrRVMrv1YcFXQ=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/gIp5e-h177G0RI2_u83sJ0Bd1KUIs2BPvzlBAibFZ3rfNzh3rLk2oETsNBmOj81xtSWo=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/mdnebAeD33Yt8je3i2pjZX41NN-gmOMYkHqhJ1naX_RTCSYct7JxhlwEn6geShEbBA=w5120-h2880-rw'
+        ]),
     Project(
         id: 'tick-risk',
         title: 'Tick Risk',

@@ -286,19 +286,38 @@ class ProjectDetailPage extends StatelessWidget {
           children: project.screenshots!.map((url) {
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.network(
-                  url,
-                  // height: 180,
-                  // width: 320,
-                  fit: BoxFit.contain,
-                  errorBuilder: (context, error, stackTrace) => Container(
-                    color: Colors.grey[200],
-                    // height: 180,
-                    // width: 320,
-                    child: const Icon(Icons.broken_image,
-                        size: 60, color: Colors.grey),
+              child: GestureDetector(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => Dialog(
+                      backgroundColor: Colors.transparent,
+                      child: InteractiveViewer(
+                        child: Container(
+                          color: Colors.black,
+                          child: Image.network(
+                            url,
+                            fit: BoxFit.contain,
+                            errorBuilder: (context, error, stackTrace) => Container(
+                              color: Colors.grey[200],
+                              child: const Icon(Icons.broken_image, size: 60, color: Colors.grey),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.network(
+                    url,
+                    fit: BoxFit.contain,
+                    errorBuilder: (context, error, stackTrace) => Container(
+                      color: Colors.grey[200],
+                      child: const Icon(Icons.broken_image,
+                          size: 60, color: Colors.grey),
+                    ),
                   ),
                 ),
               ),
