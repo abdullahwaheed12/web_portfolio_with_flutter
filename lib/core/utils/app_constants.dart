@@ -95,26 +95,6 @@ abstract class AppConstants {
       appStoreUrl: 'https://apps.apple.com/us/app/home-grown-pros/id6505116002',
     ),
     Project(
-      id: 'home-grown-pros',
-      title: 'Home Grown Pros',
-      description:
-          'Your ultimate gardening companion offering a wide selection of grow kits, seeds, tools, and accessories with expert tips and secure shopping.',
-      imageUrl:
-          'https://play-lh.googleusercontent.com/-xBR8EARZK45eYM7Tiu6gtRKnWOIJocyZ4nH26tVANtaqmJLiPv5Mox8puzsNp3Z_h8=w5120-h2880-rw',
-      webUrl: 'https://homegrownpros.io/',
-      technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
-      features: [
-        'Extensive product catalog',
-        'Expert gardening tips',
-        'Secure shopping experience',
-        'Customer reviews system',
-        'Special offers and discounts',
-      ],
-      playStoreUrl:
-          'https://play.google.com/store/apps/details?id=com.growx.homegrownpro',
-      appStoreUrl: 'https://apps.apple.com/us/app/home-grown-pros/id6505116002',
-    ),
-    Project(
         id: 'tick-risk',
         title: 'Tick Risk',
         description: '''Key Features:
@@ -124,7 +104,7 @@ abstract class AppConstants {
 4. Showing past 6 months calendar in such a way that in which date temp over 0 degree if greater the 0 degree showing tick otherwise showing simple date and export it into pdf.
 5. Showing past 12 months calendar in such a way that in which date temp over 0 degree if greater the 0 degree showing tick otherwise showing simple date and export it into pdf.''',
         imageUrl:
-            'https://your-screenshot-url-or-image-link', // Replace with actual screenshot URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/agendaVue%2FHome.png?alt=media&token=f31d6c93-d41d-4d0c-8487-a130db47515f', // Replace with actual screenshot URL if available
         webUrl: '', // Add if you have a live link
         githubUrl: '', // Add if you have a GitHub repo
         technologies: [
