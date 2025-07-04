@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../../../core/services/google_sheets_service.dart';
 import '../../../../core/utils/app_colors.dart';
@@ -30,7 +31,9 @@ class _ContactFormState extends State<ContactForm> {
     _messageController = TextEditingController();
     _nameController = TextEditingController();
     _subjectController = TextEditingController();
-    GoogleSheetsService.init();
+    if (!kIsWeb) {
+      GoogleSheetsService.init();
+    }
   }
 
   @override

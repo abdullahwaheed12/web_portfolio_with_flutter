@@ -165,7 +165,8 @@ abstract class AppConstants {
         title: 'Book a table restaurant',
         description:
             '''Introducing Book a table, the ultimate dining app that redefines how you experience restaurants. With Book a table, you're not just ordering food; you're securing your ideal dining experience. Discover a world of culinary delights, explore diverse menus, and reserve your table with ease—all in one app.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/book-a-table-4bc3d.appspot.com/o/user%2FScreenshot_1693908968.png?alt=media&token=b0f3a347-0ded-45b8-9e6d-02e0097567f4', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -227,7 +228,7 @@ Mkhhosi for Business Owners:
 
 Mkhhosi for Customers:
 - Mkhhosi offers a solution to support and grow local businesses through exceptional customer service and interaction. Join Mkhhosi and make a difference in your community.
-- Find those grassroot African businesses you were looking for and service that’s unique to the Africa market
+- Find those grassroot African businesses you were looking for and service that's unique to the Africa market
 - Enter a professional virtual reception
 - Smart booking calendar offers immediate access to your favorite supplier or therapist availability
 - Explore – the list of available services in your area
@@ -257,7 +258,8 @@ Mkhhosi for Customers:
         title: 'T-Save-Service-Provider',
         description:
             '''Dive into the future of service provision with T-Save-Service-Provider, the brainchild of a diligent student's Final Year Project (FYP). This innovative service provider-side app is designed to empower professionals like you to deliver top-notch services while ensuring trust and reliability for users.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/t-save-5e0ef.appspot.com/o/screenshot%2Fservice_provider%2FScreenshot_1693039469.png?alt=media&token=bda66c9e-117b-41f7-ac78-f6dafe0a0413', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -293,7 +295,8 @@ Mkhhosi for Customers:
         title: 'T-Save-User',
         description:
             '''Embark on a journey of convenience and seamless home service experiences with T-Save, the brainchild of a dedicated student's Final Year Project (FYP). This remarkable user-side app is designed to revolutionize how you access home services, provide feedback, and rate your experiences—all while effortlessly tracking your service requests.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/t-save-5e0ef.appspot.com/o/screenshot%2Fuser%2FScreenshot_1693034297.png?alt=media&token=d451cf83-6118-421f-b4f6-1ba7dfe2b6cb', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -374,7 +377,8 @@ You can register your business on SendIt and start managing it through SendIt Bu
         title: 'Cali health',
         description:
             '''Cali Health is basically a treatment test reminder app. Firstly, the app takes the question answer and suggests the test according to various parameters (e.g. age, height, weight, gender, etc.). Then it reminds the user for the test.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/my-cali-health.appspot.com/o/Screenshot_1692085608.png?alt=media&token=4f9605f9-e6a0-4cf2-97c5-6657fb22fbfb', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -405,7 +409,8 @@ You can register your business on SendIt and start managing it through SendIt Bu
         title: 'Whenja APP UI',
         description:
             '''This app is based on freelancers and buyers. Where buyers post the job and freelancers apply for it. This is just a UI. You can watch the video.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597206.png?alt=media&token=76c5b87b-5931-4eaa-a8c9-01cf103fc3d0', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -476,7 +481,8 @@ You can register your business on SendIt and start managing it through SendIt Bu
         title: 'AgendaVue',
         description:
             '''AgendaVue is a powerful and user-friendly app that helps you manage your school assignments and grades. With AgendaVue, you can easily keep track of your class schedules and calculate grades. You can also view your grades and each assignment's grade in real time! AgendaVue is perfect for highschool students looking to manage their grades daily, and is essential for anyone looking to stay organized and on top of their academic responsibilities. With its sleek design and intuitive features, AgendaVue is the ultimate tool for academic success.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Profile%20Dark.png?alt=media&token=83414a8c-16cb-4a06-8a9d-b9cd778a6436', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -510,7 +516,8 @@ You can register your business on SendIt and start managing it through SendIt Bu
         title: 'Klomi airbnb',
         description: '''Klomi airbnb is the clone of famous Airbnb app.
 Welcome to Klomi, your ultimate Airbnb clone experience! Discover the convenience and excitement of our platform, designed to provide you with a seamless and user-friendly accommodation booking process. With a vast selection of properties and unique stays, finding your perfect home away from home has never been easier. Whether you're looking for a cozy apartment in the heart of the city or a luxurious villa by the beach, Klomi has it all. Our secure and reliable platform ensures a hassle-free booking experience, allowing you to focus on creating unforgettable memories during your stay. Start your adventure with Klomi today!''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/klomi-e9d9c.appspot.com/o/screenshots%2FScreenshot_1692777540.png?alt=media&token=b09aa064-91ef-4e91-ae40-d1bf16fff36e', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -609,7 +616,7 @@ The features of the app are:
 • Create polls for any topic of discussion;
 • Host live events and conference, with access to potential attendees either locally or from around the globe;
 • Create blogs or think pieces for engagement and knowledge sharing;
-• Celebrate with other users from either your country or around the world via our ‘Moments’;
+• Celebrate with other users from either your country or around the world via our 'Moments';
 • An SOS emergency button within the app
 ''',
         imageUrl:
@@ -660,7 +667,7 @@ The features of the app are:
       description:
           '''Auto Attendance provides secure and fast way to mark attendance without requiring network connection. Teacher is detectable by the students within 100 meters radius.
 
-This app fully protects user’s privacy.
+This app fully protects user's privacy.
 
 PROXY ATTENDANCE SECURITY: Before auto attendance system, students can mark attendance of their fellows even if they are not present in the class. Auto Attendance mainly focus on getting rid of proxy attendance by giving all the control to the teacher.
 
@@ -669,7 +676,7 @@ CONNECTION SECURITY: Connection security is the primary focus of auto attendance
 GROUP CHAT SYSTEM: Auto Attendance provides chatting facility among the connected participants.
 
 UPCOMING FEATURES:
-• Student’s attendance report
+• Student's attendance report
 • Assignment sharing
 • Live screen sharing
 • File sharing
