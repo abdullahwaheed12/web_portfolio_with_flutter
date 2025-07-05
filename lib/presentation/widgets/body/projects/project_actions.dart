@@ -12,57 +12,80 @@ class ProjectActions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Helper function to check if URL is valid (not null and not empty)
+    bool isValidUrl(String? url) {
+      return url != null && url.trim().isNotEmpty;
+    }
+
+    // Get all valid action buttons
+    final actionButtons = <Widget>[];
+    
+    if (isValidUrl(project.previewLink)) {
+      actionButtons.add(
+        Expanded(
+          child: CustomButton(
+            label: 'Preview',
+            backgroundColor: AppColors.primaryColor,
+            onPressed: () {
+              html.window.open(project.previewLink!, '_blank');
+            },
+          ),
+        ),
+      );
+    }
+    
+    if (isValidUrl(project.githubRepoLink)) {
+      if (actionButtons.isNotEmpty) {
+        actionButtons.add(const SizedBox(width: 18));
+      }
+      actionButtons.add(
+        Expanded(
+          child: CustomButton(
+            label: 'Github',
+            borderColor: AppColors.primaryColor,
+            onPressed: () {
+              html.window.open(project.githubRepoLink!, '_blank');
+            },
+          ),
+        ),
+      );
+    }
+    
+    if (isValidUrl(project.googlePlay)) {
+      if (actionButtons.isNotEmpty) {
+        actionButtons.add(const SizedBox(width: 18));
+      }
+      actionButtons.add(
+        Expanded(
+          child: CustomButton(
+            label: 'play store',
+            borderColor: AppColors.primaryColor,
+            onPressed: () {
+              html.window.open(project.googlePlay!, '_blank');
+            },
+          ),
+        ),
+      );
+    }
+    
+    // Show "No actions available" if no valid URLs
+    if (actionButtons.isEmpty) {
+      actionButtons.add(
+        Expanded(
+          child: CustomButton(
+            label: 'No actions available',
+            borderColor: AppColors.primaryColor,
+            onPressed: () {},
+          ),
+        ),
+      );
+    }
+
     return Flexible(
       fit: FlexFit.tight,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          if (project.previewLink != null)
-            Expanded(
-              child: CustomButton(
-                label: 'Preview',
-                backgroundColor: AppColors.primaryColor,
-                onPressed: () {
-                  html.window.open(project.previewLink!, '_blank');
-                },
-              ),
-            ),
-          if (project.githubRepoLink != null) ...[
-            if (project.previewLink != null) const SizedBox(width: 18),
-            Expanded(
-              child: CustomButton(
-                label: 'Github',
-                borderColor: AppColors.primaryColor,
-                onPressed: () {
-                  html.window.open(project.githubRepoLink!, '_blank');
-                },
-              ),
-            ),
-          ],
-          if (project.googlePlay != null) ...[
-            if (project.previewLink != null || project.githubRepoLink != null)
-              const SizedBox(width: 18),
-            Expanded(
-              child: CustomButton(
-                label: 'play store',
-                borderColor: AppColors.primaryColor,
-                onPressed: () {
-                  html.window.open(project.googlePlay!, '_blank');
-                },
-              ),
-            ),
-          ],
-          if (project.previewLink == null &&
-              project.githubRepoLink == null &&
-              project.googlePlay == null)
-            Expanded(
-              child: CustomButton(
-                label: 'No actions available',
-                borderColor: AppColors.primaryColor,
-                onPressed: () {},
-              ),
-            )
-        ],
+        children: actionButtons,
       ),
     );
   }

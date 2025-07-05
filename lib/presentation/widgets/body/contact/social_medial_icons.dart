@@ -38,8 +38,18 @@ class SocialMediaIconBtn extends StatelessWidget {
   final IconData icon;
   final String? link;
 
+  // Helper function to check if link is valid (not null and not empty)
+  bool isValidLink(String? link) {
+    return link != null && link.trim().isNotEmpty && link != "https://twitter.com/";
+  }
+
   @override
   Widget build(BuildContext context) {
+    // Don't show the button if the link is not valid
+    if (!isValidLink(link)) {
+      return const SizedBox.shrink();
+    }
+
     return TextButton(
       style: IconButton.styleFrom(
         shape: const CircleBorder(),

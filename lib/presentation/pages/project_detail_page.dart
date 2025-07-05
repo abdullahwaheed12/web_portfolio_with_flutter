@@ -190,6 +190,103 @@ class ProjectDetailPage extends StatelessWidget {
   }
 
   Widget _buildLinks(BuildContext context) {
+    // Helper function to check if URL is valid (not null and not empty)
+    bool isValidUrl(String? url) {
+      return url != null && url.trim().isNotEmpty;
+    }
+
+    // Get all valid URLs
+    final validUrls = <Widget>[];
+    
+    if (isValidUrl(project.githubUrl)) {
+      validUrls.add(
+        ElevatedButton.icon(
+          onPressed: () => html.window.open(
+            project.githubUrl!,
+            '_blank',
+          ),
+          icon: const FaIcon(FontAwesomeIcons.github),
+          label: const Text('View on GitHub'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryColor,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24,
+              vertical: 12,
+            ),
+          ),
+        ),
+      );
+    }
+    
+    if (isValidUrl(project.webUrl)) {
+      validUrls.add(
+        ElevatedButton.icon(
+          onPressed: () => html.window.open(
+            project.webUrl!,
+            '_blank',
+          ),
+          icon: const FaIcon(FontAwesomeIcons.globe),
+          label: const Text('Visit Website'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryColor,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24,
+              vertical: 12,
+            ),
+          ),
+        ),
+      );
+    }
+    
+    if (isValidUrl(project.playStoreUrl)) {
+      validUrls.add(
+        ElevatedButton.icon(
+          onPressed: () => html.window.open(
+            project.playStoreUrl!,
+            '_blank',
+          ),
+          icon: const FaIcon(FontAwesomeIcons.googlePlay),
+          label: const Text('Get it on Google Play'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryColor,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24,
+              vertical: 12,
+            ),
+          ),
+        ),
+      );
+    }
+    
+    if (isValidUrl(project.appStoreUrl)) {
+      validUrls.add(
+        ElevatedButton.icon(
+          onPressed: () => html.window.open(
+            project.appStoreUrl!,
+            '_blank',
+          ),
+          icon: const FaIcon(FontAwesomeIcons.appStore),
+          label: const Text('Download on the App Store'),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryColor,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 24,
+              vertical: 12,
+            ),
+          ),
+        ),
+      );
+    }
+
+    // Only show the section if there are valid URLs
+    if (validUrls.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -203,76 +300,7 @@ class ProjectDetailPage extends StatelessWidget {
         Wrap(
           spacing: 16,
           runSpacing: 16,
-          children: [
-            if (project.githubUrl != null)
-              ElevatedButton.icon(
-                onPressed: () => html.window.open(
-                  project.githubUrl!,
-                  '_blank',
-                ),
-                icon: const FaIcon(FontAwesomeIcons.github),
-                label: const Text('View on GitHub'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
-                  ),
-                ),
-              ),
-            if (project.webUrl != null)
-              ElevatedButton.icon(
-                onPressed: () => html.window.open(
-                  project.webUrl!,
-                  '_blank',
-                ),
-                icon: const FaIcon(FontAwesomeIcons.globe),
-                label: const Text('Visit Website'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
-                  ),
-                ),
-              ),
-            if (project.playStoreUrl != null)
-              ElevatedButton.icon(
-                onPressed: () => html.window.open(
-                  project.playStoreUrl!,
-                  '_blank',
-                ),
-                icon: const FaIcon(FontAwesomeIcons.googlePlay),
-                label: const Text('Get it on Google Play'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
-                  ),
-                ),
-              ),
-            if (project.appStoreUrl != null)
-              ElevatedButton.icon(
-                onPressed: () => html.window.open(
-                  project.appStoreUrl!,
-                  '_blank',
-                ),
-                icon: const FaIcon(FontAwesomeIcons.appStore),
-                label: const Text('Download on the App Store'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primaryColor,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
-                  ),
-                ),
-              ),
-          ],
+          children: validUrls,
         ),
       ],
     );

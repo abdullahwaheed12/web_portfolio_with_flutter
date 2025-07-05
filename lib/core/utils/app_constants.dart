@@ -18,8 +18,10 @@ abstract class AppConstants {
           'Firebase',
           'Node.js',
           'MongoDB',
-          'AWS',
-          'Push Notifications'
+          'Push Notifications',
+          'Google Maps API',
+          'agroa(webrtc) for video and audio calling',
+          'call kit for real time call notifications',
         ],
         features: [
           'AI project ads with short-form videos',
@@ -27,6 +29,12 @@ abstract class AppConstants {
           'Semantic search for project matching',
           'Social media integration',
           'Real-time notifications',
+          'User profiles with video CVs',
+          'In-app messaging',
+          'aI-powered job recommendations',
+          'A.i chat bot for user assistance',
+          'Video and audio calling',
+          'Call notifications',
         ],
         playStoreUrl:
             'https://play.google.com/store/apps/details/CrewDog_TV?id=com.app.crewdog&hl=en_US',
@@ -57,6 +65,8 @@ abstract class AppConstants {
           'Secure ticketing system',
           'Social media integration',
           'Personalized recommendations',
+          'Event reminders and notifications',
+          'User profiles with event history',
         ],
         playStoreUrl:
             'https://play.google.com/store/apps/details?id=com.promoter.promoter&hl=en',
@@ -78,7 +88,12 @@ abstract class AppConstants {
         imageUrl:
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fgrowx_ai.png?alt=media&token=3f6f4a94-3adc-4b87-838b-c53f5dba1041',
         webUrl: 'https://growxai.io/',
-        technologies: ['Flutter', 'Firebase', 'TensorFlow', 'Google Cloud'],
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Google Maps API',
+          'AI Integration'
+        ],
         features: [
           'Week-by-week growing guide',
           'Growth phase tracking',
@@ -142,7 +157,8 @@ abstract class AppConstants {
         webUrl: '', // Add if you have a live link
         githubUrl: '', // Add if you have a GitHub repo
         technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
+          'Flutter',
+          'Google Maps API',
         ],
         features: [
           'Google search results limited to Canada',
@@ -170,6 +186,7 @@ abstract class AppConstants {
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
+          'Flutter', 'Firebase', 'Stripe', 'Google Maps API'
           // Add technologies used, e.g. 'Flutter', 'Firebase'
         ],
         features: [
@@ -239,9 +256,7 @@ Mkhhosi for Customers:
           'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fmkhosi_logo.png?alt=media&token=f0cee9a5-5436-4505-bfeb-19809ca14c03', // Add screenshot or image URL if available
       webUrl: 'https://mkhosi.com/',
       githubUrl: '', // Add GitHub repo if available
-      technologies: [
-        // Add technologies used, e.g. 'Flutter', 'Firebase'
-      ],
+      technologies: ['Flutter', 'Firebase', 'payfast', 'Google Maps API'],
       features: [
         'Virtual reception and smart booking calendar',
         'Client information tracking',
@@ -263,9 +278,7 @@ Mkhhosi for Customers:
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Ftsave.png?alt=media&token=b594d11c-8d4c-496f-a429-a141bf2f4818', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
-        technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
-        ],
+        technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
         features: [
           'Empowering Student Innovation: More than just an app, it transforms how service providers operate.',
           'Effortless Registration: Easy profile registration with document/photo review for approval.',
@@ -300,9 +313,7 @@ Mkhhosi for Customers:
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Ftsave.png?alt=media&token=b594d11c-8d4c-496f-a429-a141bf2f4818', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
-        technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
-        ],
+        technologies: ['Flutter', 'Firebase', 'Google Maps API'],
         features: [
           'Your Service, Your Way: Request a wide range of home services tailored to your needs.',
           'User-Friendly Interface: Intuitive and easy to navigate for all users.',
@@ -335,6 +346,7 @@ Mkhhosi for Customers:
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
+          'Flutter', 'Firebase', 'Payfast', 'Google Maps API'
           // Add technologies used, e.g. 'Flutter', 'Firebase'
         ],
         features: [
@@ -363,9 +375,7 @@ You can register your business on SendIt and start managing it through SendIt Bu
           'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fsendit.png?alt=media&token=540dfaf1-f164-4d58-9607-19a65c738bdf', // Add screenshot or image URL if available
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
-      technologies: [
-        // Add technologies used, e.g. 'Flutter', 'Firebase'
-      ],
+      technologies: ['Flutter', 'Firebase', 'Payfast', 'Google Maps API'],
       features: [
         'Register and manage your business on SendIt',
         'Business dashboard for listings, products, orders, and reports',
@@ -385,6 +395,7 @@ You can register your business on SendIt and start managing it through SendIt Bu
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
+          'Flutter', 'Google Maps API'
           // Add technologies used, e.g. 'Flutter', 'Firebase'
         ],
         features: [
@@ -449,9 +460,7 @@ You can register your business on SendIt and start managing it through SendIt Bu
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Ftimepe.png?alt=media&token=33365abd-dcd0-46a6-8e20-4dba9c2a6553', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
-        technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
-        ],
+        technologies: ['Flutter', 'Neuromorphic Design'],
         features: [
           'Neuromorphic UI design',
           'Complete app design with profile, bank account, and transfer screens',
@@ -489,7 +498,8 @@ You can register your business on SendIt and start managing it through SendIt Bu
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
+          'Flutter',
+          'Firebase',
         ],
         features: [
           'Manage school assignments and grades',
@@ -523,9 +533,7 @@ Welcome to Klomi, your ultimate Airbnb clone experience! Discover the convenienc
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fklomi.png?alt=media&token=ec2c4d25-bb37-4dbb-8f42-fa3323e08e27', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
-        technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
-        ],
+        technologies: ['Flutter', 'Firebase', 'Google Maps API'],
         features: [
           'Airbnb clone experience',
           'Seamless and user-friendly accommodation booking',
@@ -593,7 +601,10 @@ Fitness health app has multiple built-in tools that gauge your daily activities.
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
-        // Add technologies used, e.g. 'Flutter', 'Firebase'
+        'Flutter',
+        'Firebase',
+        'Webrtc for video calling',
+        'Google Maps API'
       ],
       features: [
         'Integrated health and fitness platform',
@@ -628,7 +639,15 @@ The features of the app are:
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
+          'Flutter',
+          'Firebase',
+          'Video calling',
+          'WebRTC',
+          'Firebase Cloud Messaging',
+          'Firebase Authentication',
+          'Firebase Firestore',
+          'Firebase Storage',
+          'Google Maps API',
         ],
         features: [
           'Female-focused social networking and support',
@@ -690,6 +709,9 @@ UPCOMING FEATURES:
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
+        'Flutter',
+        'Firebase',
+        'google nearby API (Bluetooth)',
         // Add technologies used, e.g. 'Flutter', 'Firebase'
       ],
       features: [
@@ -712,7 +734,13 @@ UPCOMING FEATURES:
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
-        // Add technologies used, e.g. 'Flutter', 'Firebase'
+        'Flutter',
+        'Firebase',
+        'Firebase Cloud Messaging',
+        'Firebase Authentication',
+        'Firebase Firestore',
+        'Firebase Storage',
+        'Google Maps API',
       ],
       features: [
         'Largest real estate database in Africa',
