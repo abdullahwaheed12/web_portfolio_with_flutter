@@ -235,7 +235,8 @@ Mkhhosi for Customers:
 - This convenient app helps you access your client information and track your personal journey
 - In app messaging – helps to communicate with your supplier and keeps all communication stored for quick referencing
 ''',
-      imageUrl: '', // Add screenshot or image URL if available
+      imageUrl:
+          'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fmkhosi_logo.png?alt=media&token=f0cee9a5-5436-4505-bfeb-19809ca14c03', // Add screenshot or image URL if available
       webUrl: 'https://mkhosi.com/',
       githubUrl: '', // Add GitHub repo if available
       technologies: [
@@ -259,7 +260,7 @@ Mkhhosi for Customers:
         description:
             '''Dive into the future of service provision with T-Save-Service-Provider, the brainchild of a diligent student's Final Year Project (FYP). This innovative service provider-side app is designed to empower professionals like you to deliver top-notch services while ensuring trust and reliability for users.''',
         imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/t-save-5e0ef.appspot.com/o/screenshot%2Fservice_provider%2FScreenshot_1693039469.png?alt=media&token=bda66c9e-117b-41f7-ac78-f6dafe0a0413', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Ftsave.png?alt=media&token=b594d11c-8d4c-496f-a429-a141bf2f4818', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -296,7 +297,7 @@ Mkhhosi for Customers:
         description:
             '''Embark on a journey of convenience and seamless home service experiences with T-Save, the brainchild of a dedicated student's Final Year Project (FYP). This remarkable user-side app is designed to revolutionize how you access home services, provide feedback, and rate your experiences—all while effortlessly tracking your service requests.''',
         imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/t-save-5e0ef.appspot.com/o/screenshot%2Fuser%2FScreenshot_1693034297.png?alt=media&token=d451cf83-6118-421f-b4f6-1ba7dfe2b6cb', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Ftsave.png?alt=media&token=b594d11c-8d4c-496f-a429-a141bf2f4818', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -329,7 +330,8 @@ Mkhhosi for Customers:
         title: 'Sendit User',
         description:
             '''This is the user app of Sendit. In this app, users can order their favorite dishes.''',
-        imageUrl: '', // Add screenshot or image URL if available
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fsendit.png?alt=media&token=540dfaf1-f164-4d58-9607-19a65c738bdf', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -357,7 +359,8 @@ Mkhhosi for Customers:
           '''Take your business onboard to one of South Africa's most trusted food delivery service SendIt.
 
 You can register your business on SendIt and start managing it through SendIt Business App.''',
-      imageUrl: '', // Add screenshot or image URL if available
+      imageUrl:
+          'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fsendit.png?alt=media&token=540dfaf1-f164-4d58-9607-19a65c738bdf', // Add screenshot or image URL if available
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
@@ -378,7 +381,7 @@ You can register your business on SendIt and start managing it through SendIt Bu
         description:
             '''Cali Health is basically a treatment test reminder app. Firstly, the app takes the question answer and suggests the test according to various parameters (e.g. age, height, weight, gender, etc.). Then it reminds the user for the test.''',
         imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/my-cali-health.appspot.com/o/Screenshot_1692085608.png?alt=media&token=4f9605f9-e6a0-4cf2-97c5-6657fb22fbfb', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fcali_health.png?alt=media&token=0a45bf97-ecf7-4d62-b5f3-b1029e9332d5', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -404,46 +407,46 @@ You can register your business on SendIt and start managing it through SendIt Bu
           'https://firebasestorage.googleapis.com/v0/b/my-cali-health.appspot.com/o/Screenshot_1692087175.png?alt=media&token=129810c6-90f0-4760-b841-c1765a766587',
           'https://firebasestorage.googleapis.com/v0/b/my-cali-health.appspot.com/o/Screenshot_1692087179.png?alt=media&token=bc3ebc1d-7822-449c-832b-389c090551ac'
         ]),
-    Project(
-        id: 'whenja-app-ui',
-        title: 'Whenja APP UI',
-        description:
-            '''This app is based on freelancers and buyers. Where buyers post the job and freelancers apply for it. This is just a UI. You can watch the video.''',
-        imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597206.png?alt=media&token=76c5b87b-5931-4eaa-a8c9-01cf103fc3d0', // Add screenshot or image URL if available
-        webUrl: '', // Add live link if available
-        githubUrl: '', // Add GitHub repo if available
-        technologies: [
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
-        ],
-        features: [
-          'Freelancer and buyer job posting/applying UI',
-          'Video demo available',
-          'Modern and clean user interface',
-        ],
-        playStoreUrl: '', // Add Play Store link if available
-        appStoreUrl: '', // Add App Store link if available
-        screenshots: [
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597206.png?alt=media&token=76c5b87b-5931-4eaa-a8c9-01cf103fc3d0',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597181.png?alt=media&token=6ad27989-fa35-45a1-8085-1fa31b78ebbb',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597175.png?alt=media&token=914c6f7a-ef81-475a-9a0e-1bc8ba21741e',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597167.png?alt=media&token=d45a014f-3c79-4581-a4d4-ac542dde8542',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597163.png?alt=media&token=d5b81a7e-775f-410d-8cd6-46b2c40bf832',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597150.png?alt=media&token=7d411e98-c7ef-4cad-820f-8c7b28cbe533',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597142.png?alt=media&token=7d69c217-9762-46eb-bf6b-282a6c9d3af7',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597136.png?alt=media&token=f42fb703-60c5-470c-a60e-7cef5c889580',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597124.png?alt=media&token=8005109e-1a98-4254-bdda-01a7e797c328',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597100.png?alt=media&token=bb368745-06cf-4959-a081-245e6026edfa',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597097.png?alt=media&token=f38875f4-671d-4107-ac1b-d23ae3109a15',
-          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597091.png?alt=media&token=b7f2ea21-6745-4205-9dd2-77d0d6157b7b',
-        ]),
+    // Project(
+    //     id: 'whenja-app-ui',
+    //     title: 'Whenja APP UI',
+    //     description:
+    //         '''This app is based on freelancers and buyers. Where buyers post the job and freelancers apply for it. This is just a UI. You can watch the video.''',
+    //     imageUrl:
+    //         'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597206.png?alt=media&token=76c5b87b-5931-4eaa-a8c9-01cf103fc3d0', // Add screenshot or image URL if available
+    //     webUrl: '', // Add live link if available
+    //     githubUrl: '', // Add GitHub repo if available
+    //     technologies: [
+    //       // Add technologies used, e.g. 'Flutter', 'Firebase'
+    //     ],
+    //     features: [
+    //       'Freelancer and buyer job posting/applying UI',
+    //       'Video demo available',
+    //       'Modern and clean user interface',
+    //     ],
+    //     playStoreUrl: '', // Add Play Store link if available
+    //     appStoreUrl: '', // Add App Store link if available
+    //     screenshots: [
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597206.png?alt=media&token=76c5b87b-5931-4eaa-a8c9-01cf103fc3d0',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597181.png?alt=media&token=6ad27989-fa35-45a1-8085-1fa31b78ebbb',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597175.png?alt=media&token=914c6f7a-ef81-475a-9a0e-1bc8ba21741e',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597167.png?alt=media&token=d45a014f-3c79-4581-a4d4-ac542dde8542',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597163.png?alt=media&token=d5b81a7e-775f-410d-8cd6-46b2c40bf832',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597150.png?alt=media&token=7d411e98-c7ef-4cad-820f-8c7b28cbe533',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597142.png?alt=media&token=7d69c217-9762-46eb-bf6b-282a6c9d3af7',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597136.png?alt=media&token=f42fb703-60c5-470c-a60e-7cef5c889580',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597124.png?alt=media&token=8005109e-1a98-4254-bdda-01a7e797c328',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597100.png?alt=media&token=bb368745-06cf-4959-a081-245e6026edfa',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597097.png?alt=media&token=f38875f4-671d-4107-ac1b-d23ae3109a15',
+    //       'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692597091.png?alt=media&token=b7f2ea21-6745-4205-9dd2-77d0d6157b7b',
+    //     ]),
     Project(
         id: 'time-pe-app-ui',
         title: 'Time pe APP UI',
         description:
             '''This is the neuromorphic design of the Time pe app. It is the complete design of the app. You can watch the video and photos or check out on your mobile from the link.''',
         imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Screenshot_1692605778.png?alt=media&token=42062fe0-3684-408b-86c1-ec6d1a32afc9', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Ftimepe.png?alt=media&token=33365abd-dcd0-46a6-8e20-4dba9c2a6553', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -482,7 +485,7 @@ You can register your business on SendIt and start managing it through SendIt Bu
         description:
             '''AgendaVue is a powerful and user-friendly app that helps you manage your school assignments and grades. With AgendaVue, you can easily keep track of your class schedules and calculate grades. You can also view your grades and each assignment's grade in real time! AgendaVue is perfect for highschool students looking to manage their grades daily, and is essential for anyone looking to stay organized and on top of their academic responsibilities. With its sleek design and intuitive features, AgendaVue is the ultimate tool for academic success.''',
         imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/Profile%20Dark.png?alt=media&token=83414a8c-16cb-4a06-8a9d-b9cd778a6436', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fagendua.png?alt=media&token=4e525f8f-3025-4399-91c3-04c3cccf432b', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -517,7 +520,7 @@ You can register your business on SendIt and start managing it through SendIt Bu
         description: '''Klomi airbnb is the clone of famous Airbnb app.
 Welcome to Klomi, your ultimate Airbnb clone experience! Discover the convenience and excitement of our platform, designed to provide you with a seamless and user-friendly accommodation booking process. With a vast selection of properties and unique stays, finding your perfect home away from home has never been easier. Whether you're looking for a cozy apartment in the heart of the city or a luxurious villa by the beach, Klomi has it all. Our secure and reliable platform ensures a hassle-free booking experience, allowing you to focus on creating unforgettable memories during your stay. Start your adventure with Klomi today!''',
         imageUrl:
-            'https://firebasestorage.googleapis.com/v0/b/klomi-e9d9c.appspot.com/o/screenshots%2FScreenshot_1692777540.png?alt=media&token=b09aa064-91ef-4e91-ae40-d1bf16fff36e', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fklomi.png?alt=media&token=ec2c4d25-bb37-4dbb-8f42-fa3323e08e27', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -585,7 +588,8 @@ Proper guidance keeps a person on the right way. So, why not use our video chat 
 == Activities Trackers ==
 Fitness health app has multiple built-in tools that gauge your daily activities. Step tracker shows your movement on foot in a day. Water intake gives you an idea of the water that you drink.
 ''',
-      imageUrl: '', // Add screenshot or image URL if available
+      imageUrl:
+          'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fringofwellness.png?alt=media&token=6d58aba1-f6a7-415a-a825-cbd04a257e62', // Add screenshot or image URL if available
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
@@ -620,7 +624,7 @@ The features of the app are:
 • An SOS emergency button within the app
 ''',
         imageUrl:
-            'https://play-lh.googleusercontent.com/OXrelDAB-__BXiG3f4poc-elp8C1RHEDv3FmAQAoOiLbzRrpMJbMOINsVsbT5snuOMBf=w5120-h2880-rw', // Add screenshot or image URL if available
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fpresttio.png?alt=media&token=a7d8eb22-407b-455b-8f01-2bbb7f0ceea2', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
         technologies: [
@@ -663,9 +667,9 @@ The features of the app are:
         ]),
     Project(
       id: 'students-attendance-system',
-      title: "Students Attendance System using Google's nearby API (Bluetooth)",
+      title: "Students Attendance System",
       description:
-          '''Auto Attendance provides secure and fast way to mark attendance without requiring network connection. Teacher is detectable by the students within 100 meters radius.
+          '''Students Attendance System using Google's nearby API (Bluetooth). Auto Attendance provides secure and fast way to mark attendance without requiring network connection. Teacher is detectable by the students within 100 meters radius.
 
 This app fully protects user's privacy.
 
@@ -681,7 +685,8 @@ UPCOMING FEATURES:
 • Live screen sharing
 • File sharing
 ''',
-      imageUrl: '', // Add screenshot or image URL if available
+      imageUrl:
+          'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fattendence_system.png?alt=media&token=8943357b-ad4e-4c73-8997-c780a8cee171', // Add screenshot or image URL if available
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
@@ -702,7 +707,8 @@ UPCOMING FEATURES:
       title: 'Afrihouz',
       description:
           '''Our mission is to provide technological solutions to solve the housing problem in Africa. We want to become the largest database in Africa in real estate. Our approach consists in bringing together all the players in the real estate sector (marketers, real estate agencies, clients, owners) by promoting collaboration and interaction in order to define the largest database of real estate services (house rental, purchase of house, furnished rental, purchase of land, etc.). In addition, users will be able to have advanced functionalities (geolocation, recent information, dashboards, personalized offer, real-time search filter, etc.) in order to make an informed decision on their choices. Actors can leave feedback (notes and comments) at the end of each service in order to better guide other actors in their choices and to self-regulate the platform.''',
-      imageUrl: '', // Add screenshot or image URL if available
+      imageUrl:
+          'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fafrihouz.png?alt=media&token=d93785d5-97aa-49ac-b23d-14e1b98d2914', // Add screenshot or image URL if available
       webUrl: '', // Add live link if available
       githubUrl: '', // Add GitHub repo if available
       technologies: [
