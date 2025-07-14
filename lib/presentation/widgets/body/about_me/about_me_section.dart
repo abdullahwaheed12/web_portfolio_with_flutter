@@ -5,6 +5,7 @@ import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/widgets/custom_divider.dart';
 import 'about_me_intro.dart';
 import 'experience_info.dart';
+import 'download_cv_button.dart';
 
 class AboutMeSection extends StatelessWidget {
   const AboutMeSection({super.key});
@@ -27,6 +28,8 @@ class AboutMeSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const ExperienceInfo(),
+          const SizedBox(height: 16),
+          const DownloadCVButton(),
           // const SizedBox(height: 58),
           // const BasicServicesGrid(),
           // const SizedBox(height: 80),

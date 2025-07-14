@@ -16,8 +16,6 @@ abstract class AppConstants {
         technologies: [
           'Flutter',
           'Firebase',
-          'Node.js',
-          'MongoDB',
           'Push Notifications',
           'Google Maps API',
           'agroa(webrtc) for video and audio calling',
@@ -30,7 +28,7 @@ abstract class AppConstants {
           'Social media integration',
           'Real-time notifications',
           'User profiles with video CVs',
-          'In-app messaging',
+          'Chat functionality',
           'aI-powered job recommendations',
           'A.i chat bot for user assistance',
           'Video and audio calling',
@@ -58,7 +56,13 @@ abstract class AppConstants {
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fpromotor.png?alt=media&token=2e18d702-e3c7-4ef8-bdd6-ff17596b552c',
         webUrl: 'https://www.thepromoterapp.com/',
         githubUrl: '',
-        technologies: ['Flutter', 'Firebase', 'Google Maps API', 'PayPal SDK'],
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Google Maps API',
+          'PayPal SDK',
+          'Push Notifications'
+        ],
         features: [
           'Event creation and management',
           'Geolocation-based event discovery',
@@ -100,6 +104,7 @@ abstract class AppConstants {
           'AI-powered growing tips',
           'Community support',
           'Resource optimization',
+          'Plant health monitoring',
         ],
         playStoreUrl:
             'https://play.google.com/store/apps/details?id=com.growxai.io&pli=1',
@@ -120,7 +125,13 @@ abstract class AppConstants {
         imageUrl:
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fhgp.png?alt=media&token=7930f2c8-a43c-4f13-a1e0-3389a47f7d3b',
         webUrl: 'https://homegrownpros.io/',
-        technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Stripe',
+          'Google Maps API',
+          'Api Integration'
+        ],
         features: [
           'Extensive product catalog',
           'Expert gardening tips',
@@ -159,6 +170,9 @@ abstract class AppConstants {
         technologies: [
           'Flutter',
           'Google Maps API',
+          'Weather API',
+          'PDF Generation',
+          'Weather history API'
         ],
         features: [
           'Google search results limited to Canada',
@@ -178,17 +192,14 @@ abstract class AppConstants {
         ]),
     Project(
         id: 'book-a-table-restaurant',
-        title: 'Book a table restaurant',
+        title: 'Book a table',
         description:
             '''Introducing Book a table, the ultimate dining app that redefines how you experience restaurants. With Book a table, you're not just ordering food; you're securing your ideal dining experience. Discover a world of culinary delights, explore diverse menus, and reserve your table with ease—all in one app.''',
         imageUrl:
             'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fbook_table.png?alt=media&token=2ff42b15-87dc-4ef4-a239-71a6e953a725', // Add screenshot or image URL if available
         webUrl: '', // Add live link if available
         githubUrl: '', // Add GitHub repo if available
-        technologies: [
-          'Flutter', 'Firebase', 'Stripe', 'Google Maps API'
-          // Add technologies used, e.g. 'Flutter', 'Firebase'
-        ],
+        technologies: ['Flutter', 'Firebase', 'Stripe', 'Google Maps API'],
         features: [
           'Multivendor Marvel: Platform for restaurants of all sizes and cuisines.',
           'Effortless Restaurant Registration: Easy onboarding for restaurant owners.',
@@ -228,11 +239,12 @@ abstract class AppConstants {
           'https://firebasestorage.googleapis.com/v0/b/book-a-table-4bc3d.appspot.com/o/user%2FScreenshot_1693909427.png?alt=media&token=339b428f-4bd9-458e-a49e-b0f02c2da273',
           'https://firebasestorage.googleapis.com/v0/b/book-a-table-4bc3d.appspot.com/o/user%2FScreenshot_1693909435.png?alt=media&token=ddb1e5cf-1d63-4bf9-bc0f-03b9621a6224'
         ]),
+
     Project(
-      id: 'mkhhosi',
-      title: 'Mkhhosi',
-      description:
-          '''Welcome to Mkhhosi. A personal client interface and business management app for sole proprietors – specifically focused on grassroots African business development.
+        id: 'mkhhosi',
+        title: 'Mkhhosi',
+        description:
+            '''Welcome to Mkhhosi. A personal client interface and business management app for sole proprietors – specifically focused on grassroots African business development.
 
 Mkhhosi for Business Owners:
 - In order to grow your business and add depth to your client list, your goal should be to create lasting, memorable and positive experiences for your customer.
@@ -252,23 +264,37 @@ Mkhhosi for Customers:
 - This convenient app helps you access your client information and track your personal journey
 - In app messaging – helps to communicate with your supplier and keeps all communication stored for quick referencing
 ''',
-      imageUrl:
-          'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fmkhosi_logo.png?alt=media&token=f0cee9a5-5436-4505-bfeb-19809ca14c03', // Add screenshot or image URL if available
-      webUrl: 'https://mkhosi.com/',
-      githubUrl: '', // Add GitHub repo if available
-      technologies: ['Flutter', 'Firebase', 'payfast', 'Google Maps API'],
-      features: [
-        'Virtual reception and smart booking calendar',
-        'Client information tracking',
-        'Brand and service showcase with ratings/testimonials',
-        'Support for grassroots African businesses',
-        'Customer and supplier in-app messaging',
-        'Explore available services in your area',
-        'Mobile-first business management',
-      ],
-      playStoreUrl: '', // Add if available
-      appStoreUrl: '', // Add if available
-    ),
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fmkhosi_logo.png?alt=media&token=f0cee9a5-5436-4505-bfeb-19809ca14c03', // Add screenshot or image URL if available
+        webUrl: 'https://mkhosi.com/',
+        githubUrl: '', // Add GitHub repo if available
+        technologies: ['Flutter', 'Firebase', 'payfast', 'Google Maps API'],
+        features: [
+          'Virtual reception and smart booking calendar',
+          'Client information tracking',
+          'Brand and service showcase with ratings/testimonials',
+          'Support for grassroots African businesses',
+          'Customer and supplier in-app messaging',
+          'Explore available services in your area',
+          'Mobile-first business management',
+        ],
+        playStoreUrl: '', // Add if available
+        appStoreUrl: '', // Add if available
+        screenshots: [
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793157.png?alt=media&token=cc839348-6ebf-4b3e-837a-e27f4225617e',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793298.png?alt=media&token=04bb7923-142e-4eec-bbf6-7e04c6ea96e8',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793476.png?alt=media&token=857d7c7b-32ff-43db-9a2c-babd1b8936d9',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793482.png?alt=media&token=ac0305d3-315e-48de-9595-d4c007b18788',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793487.png?alt=media&token=5dca4fec-11e1-4d34-a359-480df9b01bd6',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793492.png?alt=media&token=fcebb100-1c3f-4ec9-b29a-253dc976cea8',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793503.png?alt=media&token=090cabf8-87b6-45d6-b736-4cc425bb889a',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793523.png?alt=media&token=c8cd3fc4-2b24-4646-ab7c-30b67bdf2167',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793527.png?alt=media&token=d5df81de-3842-4076-8ad9-4f34788760bb',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793564.png?alt=media&token=9f7aa4d0-2841-4e80-9955-7a6d49c0240a',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793577.png?alt=media&token=2339cd7b-5230-4b06-add3-5e0dfffcf9f1',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793609.png?alt=media&token=359f4cde-0b93-44ae-b608-123fc4c66b1b',
+          'https://firebasestorage.googleapis.com/v0/b/my-portfolio-47e33.appspot.com/o/mkhosi%2FScreenshot_1751793612.png?alt=media&token=089f5283-0d9d-46fd-9c76-79846a44ab33'
+        ]),
     Project(
         id: 't-save-service-provider',
         title: 'T-Save-Service-Provider',
