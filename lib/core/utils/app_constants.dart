@@ -5,6 +5,55 @@ abstract class AppConstants {
 
   static const List<Project> projects = [
     Project(
+        id: 'LB-908',
+        title: 'LB 908',
+        description:
+            'The 908 App is your content hub for everything Long Beach. Feature articles, daily videos, online shows, news updates, a calendar of events, coupons, and more are on The 908 App. Looking for a local business? Try The 908 App’s comprehensive local search engine. The first of its kind, find high quality profiles, contact info, and ever-updating content on thousands of businesses centered around East Long Beach! The 908 App was created with the goal of bringing everything happening in the city of Long Beach to your fingertips. Let us know how we can improve your user experience! And remember, Life is Great in the 908!',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/rEyVhvSaF79niQV1kUmklzDYt8C_EqI2qn_pnNDzbqLfdkSmKFFyf8g1WoN17aHv9bA=w480-h960-rw',
+        webUrl: 'https://www.lb908.com/',
+        githubUrl: '',
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Push Notifications',
+          'Google Maps API',
+          'Dio for API calls',
+          'Laravel Api',
+          'Swagger for API documentation',
+          'Figma'
+        ],
+        features: [
+          'Feature Articles',
+          'Local Business Listings',
+          'User-Friendly Interface',
+          'Search Functionality',
+          'Push Notifications for Updates',
+          'Social Media Integration',
+          'User Feedback and Support',
+          'Event Calendar',
+          'Coupons and Promotions',
+          'High-Quality Content',
+          'News Updates',
+          'Calendar of Events',
+          'Coupons',
+          'Comprehensive Local Search Engine',
+          'Continuously Updated Local Content',
+          'Coverage of Thousands of East Long Beach Businesses',
+          'City-Wide Coverage for Long Beach Happenings',
+          'User Feedback Support / UX Improvement Requests'
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.lb908.lb908&hl=en',
+        appStoreUrl: 'https://apps.apple.com/us/app/lb-908/id1384299220',
+        screenshots: [
+          'https://play-lh.googleusercontent.com/yPgUR2DBl9m8SRdtJKoryKa2fR8cZ4jXJm9hphh7ksISw0WOSgsCVD16qnC7PArF3mc=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/sDLikFYhxsglyi50cN9dyyGguKQMkqA7u5id-UqEYwIFjJwe4xKQEWfuAmWFYWtBBQ=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/vCj28Hx5LjFnCcliFfEsv8W20wzPdbSkvhe3WJZSbYQ7_ed772APn8xDqmpAihKX9w=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/9MGqXEHgaNbIguE9hno0yQXxYOqtXArMbbQ_UTWfEn_GdPZ71QwfwjXzYkSCRc4a4qU=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/84dvv01oaWPQmMxSf2NyoeOSmyLcmoue5ZdpeicjS2jDyaTreiPe6kzGrJLD-Ih5cUY=w5120-h2880-rw',
+        ]),
+    Project(
         id: 'crewdog-tv',
         title: 'CrewDog TV',
         description:
