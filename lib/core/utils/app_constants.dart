@@ -5,6 +5,62 @@ abstract class AppConstants {
 
   static const List<Project> projects = [
     Project(
+        id: 'Practice360',
+        title: 'Practice360',
+        description:
+            'Practice360 is a comprehensive app designed to simplify and enhance the workflow of healthcare professionals. This intuitive platform offers a convenient way to manage licenses, track educational progress, and access CPD (Continuing Professional Development) events, ensuring professionals stay updated and compliant with industry standards.',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/9ZgOPQu1W2obbpDlCSy08CxB-WqQn2TFwZyJRVLPmtUxNh5pn9I4LoSVhNHmmsCjYn7p0sFOac3TKDG2tno6=s112-rw',
+        webUrl: 'https://app.practice360.ai/',
+        githubUrl: '',
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Push Notifications',
+          'Google Maps API',
+          'Dio for API calls',
+          'Laravel Api',
+          'Postman for API documentation',
+          'The Clean architecture',
+          'GetX for state management',
+          'Widget Testing',
+          'Figma'
+        ],
+        features: [
+          'License Management Dashboard',
+          'Track Educational Progress',
+          'CPD (Continuing Professional Development) Event Access',
+          'Automated Reminders for License Renewal',
+          'Push Notifications for Upcoming Deadlines & Events',
+          'Document Upload & Secure Storage',
+          'Certification Tracking & Verification',
+          'Personalized Learning Recommendations',
+          'User-Friendly Interface',
+          'Search Functionality for Events & Courses',
+          'Multi-Platform Support (Android, iOS, Web)',
+          'Multi-Language Support',
+          'Calendar Integration for CPD Events',
+          'Downloadable Certificates & Reports',
+          'Offline Access for Saved Resources',
+          'User Feedback & Support',
+          'Data Privacy & Security Compliance'
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=ke.go.dha.healthpro&pli=1',
+        appStoreUrl: 'https://apps.apple.com/us/app/practice360/id6746659051',
+        screenshots: [
+          'https://play-lh.googleusercontent.com/NCmDIuTtt9Noab3niGSqiRjFdW3716d7xdaseuBo0Wts7Js5fIkkhqcua4hyWOUtv12PvyieI5kBIhyG-o0qRA=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/2s8VGoIUZ_ShVxr3HtJt_IZDIyVgwGdJ8tvSua-bn8I7eb8WfgSoqqtxBHQAjHlQ5_xeyxJO_7mbq60jo9-d0Aw=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/NdbhJDYD4rpiQNAiLq8U0m4kKt1RxfQBfSsXBJhaVYIp0xn3RvSsMJmE2WF6dPnZyPwkFSciZkSGY4k3lIqO=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/SZzMK8WMY3qdOqzf6kCQk1FTYSqVZHX-Wd8mieZ-oaFuRaoUR7MuyGgLOw_CcPTMe4s14gzOLmkBtgDQ_YR0V7s=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/5aKaNQKDlLBmgdz2OHhHzIi0SjCASGwhRZ9lfqVpxYpF__o6Oa1SfboPT4mWQDsL-0XVTUKZ2GZmGO7Rlw25=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/1I7j2LE2nn5irEi_1rOSvJyvVvx28eAs5qHW9lbCaDnT4VW0iQ0TIriEM21fROB8SusBZvC2zBrd5W7Hhx6Stw=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/Az15DT_2d9vytXO-sbDzYoS-E592BH_5w1VSZlak7jIxzZzv2H7nzmcFgKM1K7izKPKnUD2k2j-FjobKmns6=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/lGibclQ8Q20-5bE65rc9_spF28GAzQm8lymQxkDbhQ5rZJyrKjpxNpXgYyXJHw1I6A=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/vGm-rpaQuMA6psmhpHXBkFrSrqEokqpVk4DWIWYKZH4c62-F8uBsnyNnD_NdcTDiD7U=w5120-h2880-rw',
+        ]),
+
+    Project(
         id: 'My_Shout',
         title: 'My Shout',
         description:
@@ -50,6 +106,7 @@ abstract class AppConstants {
           'https://play-lh.googleusercontent.com/jCcixStUz3zfw9zrE4_N8V16-eAfEYFEDV0Ue-HczlCGpi7_nbUUWr1gepWTgpVwQlw=w5120-h2880-rw',
           'https://play-lh.googleusercontent.com/acMFeicXz2p8MuMMuN03Qiri9y-uddMlDAKOjLezgptuidc-quzYy67I-t9XTwP89O8S=w5120-h2880-rw',
         ]),
+
     Project(
         id: 'LB-908',
         title: 'LB 908',
