@@ -5,6 +5,52 @@ abstract class AppConstants {
 
   static const List<Project> projects = [
     Project(
+        id: 'My_Shout',
+        title: 'My Shout',
+        description:
+            'My-Shout is an application to alert family and friends during an emergency, and for family and friends to communicate and stay connected through its chat platform.',
+        imageUrl:
+            'https://play-lh.googleusercontent.com/48bp9YuuDdvL9ibe0h1sSGQsZ85HgGwgrZ7gIGnyRRIk-srsibiJSt1S5qJXLuMhm6M=w480-h960-rw',
+        webUrl: 'https://myshout.net/',
+        githubUrl: '',
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'Push Notifications',
+          'Google Maps API',
+          'Google Ad Mob',
+          'Figma'
+        ],
+        features: [
+          'One-Tap Emergency Alert (SOS Button)',
+          'Real-Time Location Sharing',
+          'Family & Friends Network',
+          'In-App Chat (Individual & Group)',
+          'Media Sharing (Images, Voice Notes, Videos)',
+          'Safe Zone & Geo-fencing Alerts',
+          'Quick Dial to Emergency Contacts',
+          'Local Emergency Numbers Access',
+          'Push Notifications for Alerts & Chats',
+          'Privacy Controls for Location Sharing',
+          'Multi-Platform Support (Android, iOS)',
+          'Multi-Language Support',
+          'History of Alerts & Chat Records',
+          'Customizable Alert Settings',
+          'User Feedback & Support'
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=org.myshout.app',
+        appStoreUrl: 'https://apps.apple.com/us/app/my-shout/id1633274395',
+        screenshots: [
+          'https://play-lh.googleusercontent.com/CgMWyqVgkUP-n_clboqKLo3WorRfb2fA5woECe_JH0dPNEJt5ilv6xzFdPo_gQFJHBAC=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/baNdsdZwWLhQQf7y0eGW9SUKRp0SfAEc5tkuWDk0r7TNulA7cmR_cplBk1NJClnwxrM=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/sp4rd-SHTvFnRBtSRbwMrbvGc7pnsA4vEuCzOvlhM7cz0WjHXFxSeHjwJJ6GSkHc3UU=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/HO4q1XLLy-7UMWxP2H9KmmzdqYdr0fzXz1DyDTy3_Ax2S0aPzyQeEIe4Z4fh7WVuLQ=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/Sdu6xgYWA51fes-tATE7hHpCEchVeoD2lhoAQfJ5OdrUO6ujtKys1xX-kQrB_qgtZXE=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/jCcixStUz3zfw9zrE4_N8V16-eAfEYFEDV0Ue-HczlCGpi7_nbUUWr1gepWTgpVwQlw=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/acMFeicXz2p8MuMMuN03Qiri9y-uddMlDAKOjLezgptuidc-quzYy67I-t9XTwP89O8S=w5120-h2880-rw',
+        ]),
+    Project(
         id: 'LB-908',
         title: 'LB 908',
         description:
