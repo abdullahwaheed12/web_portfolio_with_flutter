@@ -14,9 +14,11 @@ class PortfolioApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.darkTheme(),
       title: 'Abdullah',
-      home: BlocProvider<HomeBloc>(
-        create: (context) => HomeBloc(),
-        child: const HomeView(),
+      home: SelectionArea(
+        child: BlocProvider<HomeBloc>(
+          create: (context) => HomeBloc(),
+          child: const HomeView(),
+        ),
       ),
     );
   }

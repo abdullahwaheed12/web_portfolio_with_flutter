@@ -17,11 +17,11 @@ class CustomMenuBtn extends StatelessWidget {
             crossFadeState: _getCrossFadeState(context),
             firstChild: TextButton(
               onPressed: () => _menuBtnClicked(context),
-              child: const Icon(Icons.menu),
+              child: const SelectionContainer.disabled(child: Icon(Icons.menu)),
             ),
             secondChild: TextButton(
               onPressed: () => _closeBtnClicked(context),
-              child: const Icon(Icons.close),
+              child: const SelectionContainer.disabled(child: Icon(Icons.close)),
             ),
             duration: const Duration(milliseconds: 200),
           ),

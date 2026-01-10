@@ -10,6 +10,11 @@ abstract class CustomTheme {
         highlightColor: AppColors.secondaryColor,
         scaffoldBackgroundColor: AppColors.scaffoldColor,
         fontFamily: 'Poppins',
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: AppColors.primaryColor,
+          selectionColor: AppColors.primaryColor.withOpacity(0.5),
+          selectionHandleColor: AppColors.primaryColor,
+        ),
         inputDecorationTheme: InputDecorationTheme(
           fillColor: AppColors.primaryLight,
           filled: true,

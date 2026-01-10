@@ -49,10 +49,12 @@ class CustomButton extends StatelessWidget {
             ),
             if (icon != null) ...[
               const SizedBox(width: 5),
-              Icon(
-                icon,
-                size: 18,
-                color: AppColors.white,
+              SelectionContainer.disabled(
+                child: Icon(
+                  icon,
+                  size: 18,
+                  color: AppColors.white,
+                ),
               ),
             ]
           ],

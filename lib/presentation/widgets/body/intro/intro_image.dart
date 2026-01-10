@@ -20,10 +20,12 @@ class IntroImage extends StatelessWidget {
       // alignment: Alignment.topRight,
       top: 0,
       right: 8,
-      child: Image.asset(
-        AppAssets.devImg,
-        width: responsiveSize.getSize(),
-        height: responsiveSize.getSize(),
+      child: SelectionContainer.disabled(
+        child: Image.asset(
+          AppAssets.devImg,
+          width: responsiveSize.getSize(),
+          height: responsiveSize.getSize(),
+        ),
       ),
     );
   }

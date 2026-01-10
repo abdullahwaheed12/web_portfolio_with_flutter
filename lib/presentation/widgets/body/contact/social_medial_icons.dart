@@ -58,10 +58,12 @@ class SocialMediaIconBtn extends StatelessWidget {
       onPressed: () {
         html.window.open(link!, '_blank');
       },
-      child: Icon(
-        icon,
-        color: AppColors.primaryColor,
-        size: 32,
+      child: SelectionContainer.disabled(
+        child: Icon(
+          icon,
+          color: AppColors.primaryColor,
+          size: 32,
+        ),
       ),
     );
   }

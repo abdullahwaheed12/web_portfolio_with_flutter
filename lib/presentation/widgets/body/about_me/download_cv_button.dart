@@ -7,10 +7,11 @@ class DownloadCVButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
-      icon: const Icon(Icons.download),
+      icon: const SelectionContainer.disabled(child: Icon(Icons.download)),
       label: const Text('Download CV'),
       onPressed: () async {
-        final url = Uri.parse('assets/Abdullah_Waheed_Flutter_Developer_Resume.pdf');
+        final url =
+            Uri.parse('assets/Abdullah_Waheed_Flutter_Developer_Resume.pdf');
         if (!await launchUrl(url, webOnlyWindowName: '_blank')) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Could not open CV.')),
@@ -19,4 +20,4 @@ class DownloadCVButton extends StatelessWidget {
       },
     );
   }
-} 
+}

@@ -17,45 +17,48 @@ class ProjectDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.scaffoldColor,
-      appBar: AppBar(
-        backgroundColor: AppColors.appBarColor,
-        title: Text(
-          project.title,
-          style: AppStyles.s24,
+    return SelectionArea(
+      child: Scaffold(
+        backgroundColor: AppColors.scaffoldColor,
+        appBar: AppBar(
+          backgroundColor: AppColors.appBarColor,
+          title: Text(
+            project.title,
+            style: AppStyles.s24,
+          ),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => Navigator.pop(context),
+          ),
         ),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _buildHeader(),
-            if (project.screenshots != null && project.screenshots!.isNotEmpty)
+        body: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildHeader(),
+              if (project.screenshots != null &&
+                  project.screenshots!.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: _buildScreenshotRow(context),
+                ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 24),
-                child: _buildScreenshotRow(context),
+                padding: const EdgeInsets.all(24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _buildDescription(),
+                    const SizedBox(height: 32),
+                    _buildTechnologies(context),
+                    const SizedBox(height: 32),
+                    _buildFeatures(),
+                    const SizedBox(height: 32),
+                    _buildLinks(context),
+                  ],
+                ),
               ),
-            Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _buildDescription(),
-                  const SizedBox(height: 32),
-                  _buildTechnologies(context),
-                  const SizedBox(height: 32),
-                  _buildFeatures(),
-                  const SizedBox(height: 32),
-                  _buildLinks(context),
-                ],
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -64,18 +67,20 @@ class ProjectDetailPage extends StatelessWidget {
   Widget _buildHeader() {
     return Stack(
       children: [
-        Image.network(
-          project.imageUrl,
-          height: 300,
-          width: double.infinity,
-          fit: BoxFit.cover,
-          errorBuilder: (context, error, stackTrace) => Container(
+        SelectionContainer.disabled(
+          child: Image.network(
+            project.imageUrl,
             height: 300,
-            color: AppColors.primaryColor.withOpacity(0.1),
-            child: Icon(
-              Icons.error_outline,
-              color: AppColors.primaryColor,
-              size: 60,
+            width: double.infinity,
+            fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) => Container(
+              height: 300,
+              color: AppColors.primaryColor.withOpacity(0.1),
+              child: Icon(
+                Icons.error_outline,
+                color: AppColors.primaryColor,
+                size: 60,
+              ),
             ),
           ),
         ),
@@ -169,10 +174,12 @@ class ProjectDetailPage extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
-                  Icons.check_circle,
-                  color: AppColors.primaryColor,
-                  size: 20,
+                SelectionContainer.disabled(
+                  child: Icon(
+                    Icons.check_circle,
+                    color: AppColors.primaryColor,
+                    size: 20,
+                  ),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
@@ -197,7 +204,7 @@ class ProjectDetailPage extends StatelessWidget {
 
     // Get all valid URLs
     final validUrls = <Widget>[];
-    
+
     if (isValidUrl(project.githubUrl)) {
       validUrls.add(
         ElevatedButton.icon(
@@ -218,7 +225,7 @@ class ProjectDetailPage extends StatelessWidget {
         ),
       );
     }
-    
+
     if (isValidUrl(project.webUrl)) {
       validUrls.add(
         ElevatedButton.icon(
@@ -226,7 +233,8 @@ class ProjectDetailPage extends StatelessWidget {
             project.webUrl!,
             '_blank',
           ),
-          icon: const FaIcon(FontAwesomeIcons.globe),
+          icon: const SelectionContainer.disabled(
+              child: FaIcon(FontAwesomeIcons.globe)),
           label: const Text('Visit Website'),
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.primaryColor,
@@ -239,7 +247,7 @@ class ProjectDetailPage extends StatelessWidget {
         ),
       );
     }
-    
+
     if (isValidUrl(project.playStoreUrl)) {
       validUrls.add(
         ElevatedButton.icon(
@@ -260,7 +268,7 @@ class ProjectDetailPage extends StatelessWidget {
         ),
       );
     }
-    
+
     if (isValidUrl(project.appStoreUrl)) {
       validUrls.add(
         ElevatedButton.icon(
@@ -358,36 +366,40 @@ class ProjectDetailPage extends StatelessWidget {
                                   Container(
                                     color: Colors.black,
                                     child: InteractiveViewer(
-                                      child: Image.network(
-                                        project.screenshots![currentIndex],
-                                        fit: BoxFit.contain,
-                                        loadingBuilder:
-                                            (context, child, loadingProgress) {
-                                          if (loadingProgress == null) {
-                                            return child;
-                                          }
-                                          return Container(
-                                            height: 400,
-                                            color:
-                                                Colors.black.withOpacity(0.1),
-                                            child: const Center(
-                                              child: SizedBox(
-                                                height: 60,
-                                                width: 60,
-                                                child:
-                                                    CircularProgressIndicator(
-                                                  color: Colors.white,
+                                      child: SelectionContainer.disabled(
+                                        child: Image.network(
+                                          project.screenshots![currentIndex],
+                                          fit: BoxFit.contain,
+                                          loadingBuilder: (context, child,
+                                              loadingProgress) {
+                                            if (loadingProgress == null) {
+                                              return child;
+                                            }
+                                            return Container(
+                                              height: 400,
+                                              color:
+                                                  Colors.black.withOpacity(0.1),
+                                              child: const Center(
+                                                child: SizedBox(
+                                                  height: 60,
+                                                  width: 60,
+                                                  child:
+                                                      CircularProgressIndicator(
+                                                    color: Colors.white,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          );
-                                        },
-                                        errorBuilder:
-                                            (context, error, stackTrace) =>
-                                                Container(
-                                          color: Colors.grey[200],
-                                          child: const Icon(Icons.broken_image,
-                                              size: 60, color: Colors.grey),
+                                            );
+                                          },
+                                          errorBuilder:
+                                              (context, error, stackTrace) =>
+                                                  Container(
+                                            color: Colors.grey[200],
+                                            child: const Icon(
+                                                Icons.broken_image,
+                                                size: 60,
+                                                color: Colors.grey),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -413,8 +425,11 @@ class ProjectDetailPage extends StatelessWidget {
                                               shape: BoxShape.circle,
                                             ),
                                             padding: const EdgeInsets.all(8),
-                                            child: const Icon(Icons.arrow_left,
-                                                size: 48, color: Colors.white),
+                                            child: const SelectionContainer
+                                                .disabled(
+                                                child: Icon(Icons.arrow_left,
+                                                    size: 48,
+                                                    color: Colors.white)),
                                           ),
                                         ),
                                       ),
@@ -441,8 +456,11 @@ class ProjectDetailPage extends StatelessWidget {
                                               shape: BoxShape.circle,
                                             ),
                                             padding: const EdgeInsets.all(8),
-                                            child: const Icon(Icons.arrow_right,
-                                                size: 48, color: Colors.white),
+                                            child: const SelectionContainer
+                                                .disabled(
+                                                child: Icon(Icons.arrow_right,
+                                                    size: 48,
+                                                    color: Colors.white)),
                                           ),
                                         ),
                                       ),
@@ -481,28 +499,31 @@ class ProjectDetailPage extends StatelessWidget {
                 },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
-                  child: Image.network(
-                    url,
-                    fit: BoxFit.contain,
-                    loadingBuilder: (context, child, loadingProgress) {
-                      if (loadingProgress == null) return child;
-                      return Container(
-                        height: 180,
-                        width: 320,
-                        color: Colors.black.withOpacity(0.1),
-                        child: const Center(
-                          child: SizedBox(
-                            height: 40,
-                            width: 40,
-                            child: CircularProgressIndicator(),
+                  child: SelectionContainer.disabled(
+                    child: Image.network(
+                      url,
+                      fit: BoxFit.contain,
+                      loadingBuilder: (context, child, loadingProgress) {
+                        if (loadingProgress == null) return child;
+                        return Container(
+                          height: 180,
+                          width: 320,
+                          color: Colors.black.withOpacity(0.1),
+                          child: const Center(
+                            child: SizedBox(
+                              height: 40,
+                              width: 40,
+                              child: CircularProgressIndicator(),
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                    errorBuilder: (context, error, stackTrace) => Container(
-                      color: Colors.grey[200],
-                      child: const Icon(Icons.broken_image,
-                          size: 60, color: Colors.grey),
+                        );
+                      },
+                      errorBuilder: (context, error, stackTrace) => Container(
+                        color: Colors.grey[200],
+                        child: const SelectionContainer.disabled(
+                            child: Icon(Icons.broken_image,
+                                size: 60, color: Colors.grey)),
+                      ),
                     ),
                   ),
                 ),
