@@ -55,13 +55,13 @@ class _ContactFormState extends State<ContactForm> {
           subject: _subjectController.text,
           message: _messageController.text,
         );
-        
+
         // Clear form after successful submission
         _nameController.clear();
         _emailController.clear();
         _subjectController.clear();
         _messageController.clear();
-        
+
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
@@ -116,7 +116,8 @@ class _ContactFormState extends State<ContactForm> {
                 if (value == null || value.isEmpty) {
                   return 'Please enter your email';
                 }
-                if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
+                if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+                    .hasMatch(value)) {
                   return 'Please enter a valid email';
                 }
                 return null;
@@ -140,6 +141,7 @@ class _ContactFormState extends State<ContactForm> {
               maxLines: 5,
               style: AppStyles.s14,
               decoration: const InputDecoration(
+                alignLabelWithHint: true,
                 labelText: 'Type a message here...',
               ),
               validator: (value) {

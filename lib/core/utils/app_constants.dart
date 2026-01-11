@@ -307,6 +307,39 @@ abstract class AppConstants {
           'https://play-lh.googleusercontent.com/mdnebAeD33Yt8je3i2pjZX41NN-gmOMYkHqhJ1naX_RTCSYct7JxhlwEn6geShEbBA=w5120-h2880-rw'
         ]),
     Project(
+        id: 'Pitch-Flow',
+        title: 'Pitch Flow',
+        description:
+            "PitchFlow is the revolutionary social marketplace that combines the power of social media with professional services. Whether you're a creative professional, freelancer, or entrepreneur, PitchFlow helps you showcase your talents, connect with clients, and build a thriving business.",
+        imageUrl:
+            'https://firebasestorage.googleapis.com/v0/b/my-converter-flutter.appspot.com/o/app_logos%2Fhgp.png?alt=media&token=7930f2c8-a43c-4f13-a1e0-3389a47f7d3b',
+        webUrl: 'https://pitchflow.fr/',
+        technologies: [
+          'Flutter',
+          'Nodejs',
+          'Stripe',
+          'MongoDB',
+          'Google Maps API',
+          'Api Integration'
+        ],
+        features: [
+          'Extensive product catalog',
+          'Expert gardening tips',
+          'Secure shopping experience',
+          'Customer reviews system',
+          'Special offers and discounts',
+        ],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.pitchflow.app',
+        appStoreUrl: 'https://apps.apple.com/us/app/pitch-flow/id6448320822',
+        screenshots: [
+          'https://play-lh.googleusercontent.com/NjV6k8rS0h2uedjjyaTuDgQ01hSfQSgDzMzV6eGjhEIb4BrH0T7oaoi3W01HoAxRyJfrj3zAXu4F1yx-Ddf24J4=w5120-h2880-rw'
+              'https://play-lh.googleusercontent.com/DiImeXR2Nq1uoA3BwTdt-6R1r337k6bn5BM_KGmp3wkj3FY6vaPLPIV1L91m27YIytMNuVJW1xagsNPTStzWFA=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/JgSgLibpJkxHHvtTAocuER44gGP9KWDjTKy8V2u85E88xlyaZ-ZEQv459p5cBWrFH9CwjaOscN-vlK3YjTFlo-M=w5120-h2880-rw',
+          'https://play-lh.googleusercontent.com/-HkOy9p5rzcpiZVEK8_fcbjyXU4nXjsBZzdLdOd_dKkmvKd7I7S9mg-HzNvQt3VpyTnhLVldoDC7U-DpHQDJjQI=w5120-h2880-rw'
+        ]),
+
+    Project(
         id: 'tick-risk',
         title: 'Tick Risk',
         description: '''Key Features:
